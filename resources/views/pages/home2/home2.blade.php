@@ -20,7 +20,7 @@
      x-init="startAutoplay()">
 
     <!-- ========================================================================= -->
-    <!-- 1. HERO SLIDER SECTION (Clean, Minimal Aesthetic from Reference)          -->
+    <!-- HERO SLIDER SECTION (Clean, Minimal Aesthetic from Reference)             -->
     <!-- ========================================================================= -->
     <section class="relative w-full h-[75vh] min-h-[520px] max-h-[820px] bg-[#1E252D] overflow-hidden border-b border-[#C59B27]">
         <!-- Slide 1 -->
@@ -107,7 +107,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 2. SECTION 01: EQUIPMENT LINES PORTFOLIO (Clean Architectural Cards)     -->
+    <!-- EQUIPMENT LINES PORTFOLIO (Clean Architectural Cards)                     -->
     <!-- ========================================================================= -->
     <section id="solutions" class="pt-16 sm:pt-20 pb-20 sm:pb-24 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
@@ -115,7 +115,7 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#C59B27]">
                 <div>
                     <span class="text-xs uppercase tracking-[0.25em] text-[#C59B27] font-medium block mb-3">
-                        01 / Machinery Series
+                        Machinery Series
                     </span>
                     <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#1E252D]"
                         style="font-family: 'new-hero', sans-serif;">
@@ -289,7 +289,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 3. SECTION 02: INTERACTIVE IRONER FINDER (Refined Configurator Layout)   -->
+    <!-- INTERACTIVE IRONER FINDER (Refined Configurator Layout)                   -->
     <!-- ========================================================================= -->
     <section id="finder" class="py-16 sm:py-24 bg-[#FAF9F6] border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
@@ -297,7 +297,7 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#C59B27] mb-12">
                 <div>
                     <span class="text-xs uppercase tracking-[0.25em] text-[#C59B27] font-medium block mb-3">
-                        02 / Specification Selector
+                        Specification Selector
                     </span>
                     <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#1E252D]"
                         style="font-family: 'new-hero', sans-serif;">
@@ -463,7 +463,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 4. SECTION 03: SERVICE & TECHNOLOGY (Clean Editorial Layout)              -->
+    <!-- SERVICE & TECHNOLOGY (Clean Editorial Layout)                             -->
     <!-- ========================================================================= -->
     <section id="technology" class="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
@@ -471,7 +471,7 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#C59B27] mb-16">
                 <div>
                     <span class="text-xs uppercase tracking-[0.25em] text-[#C59B27] font-medium block mb-3">
-                        03 / Engineering & Support
+                        Engineering & Support
                     </span>
                     <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#1E252D]"
                         style="font-family: 'new-hero', sans-serif;">
@@ -541,7 +541,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 5. SECTION 04: CLIENT EXPERIENCES & CASE REFERENCES                       -->
+    <!-- CLIENT EXPERIENCES & CASE REFERENCES                                      -->
     <!-- ========================================================================= -->
     <section id="testimonials" class="py-16 sm:py-24 bg-[#FAF9F6] border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
@@ -549,7 +549,7 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#C59B27] mb-14">
                 <div>
                     <span class="text-xs uppercase tracking-[0.25em] text-[#C59B27] font-medium block mb-3">
-                        04 / Client Experiences
+                        Client Experiences
                     </span>
                     <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#1E252D]"
                         style="font-family: 'new-hero', sans-serif;">
@@ -612,7 +612,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 6. SECTION 05: FREQUENTLY ASKED QUESTIONS (Clean Alpine Accordion)       -->
+    <!-- FREQUENTLY ASKED QUESTIONS (Clean Alpine Accordion)                       -->
     <!-- ========================================================================= -->
     <section id="faq" class="py-16 sm:py-24 bg-white border-b border-slate-200"
              x-data="{ activeFaq: 0 }">
@@ -621,7 +621,7 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#C59B27] mb-12">
                 <div>
                     <span class="text-xs uppercase tracking-[0.25em] text-[#C59B27] font-medium block mb-3">
-                        05 / Technical & Commercial Queries
+                        Technical & Commercial Queries
                     </span>
                     <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#1E252D]"
                         style="font-family: 'new-hero', sans-serif;">
@@ -734,7 +734,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 7. SECTION 06: ENGINEERING CREDENTIALS (Clean Metric Ribbon)              -->
+    <!-- ENGINEERING CREDENTIALS (Clean Metric Ribbon)                             -->
     <!-- ========================================================================= -->
     <section id="credentials" class="py-14 sm:py-16 bg-[#1E252D] text-white border-b border-[#C59B27]">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
@@ -760,7 +760,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 8. SECTION 07: TALK WITH US (Clean Form & Direct Contacts)                -->
+    <!-- TALK WITH US (Clean Form & Direct Contacts)                               -->
     <!-- ========================================================================= -->
     <section id="contact" class="py-16 sm:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
@@ -768,7 +768,7 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#C59B27] mb-14">
                 <div>
                     <span class="text-xs uppercase tracking-[0.25em] text-[#C59B27] font-medium block mb-3">
-                        06 / Contact & Inquiries
+                        Contact & Inquiries
                     </span>
                     <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#1E252D]"
                         style="font-family: 'new-hero', sans-serif;">

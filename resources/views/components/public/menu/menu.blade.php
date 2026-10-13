@@ -1,28 +1,31 @@
-<div x-data="{ show: @entangle('isOpen') }"
+<div x-data="{ show: false }"
      x-show="show"
-     @keydown.escape.window="show = false; $wire.close()"
+     @open-menu.window="show = true"
+     @close-menu.window="show = false"
+     @keydown.escape.window="show = false"
      class="fixed inset-0 z-50 overflow-hidden"
      style="font-family: 'new-hero', sans-serif; display: none;">
 
-    <!-- Background Backdrop Overlay with Smooth Fade -->
+    <!-- Background Backdrop Overlay with Instant Hardware-Accelerated Fade -->
     <div x-show="show"
-         x-transition:enter="transition-opacity ease-out duration-500"
+         x-transition:enter="transition-opacity ease-out duration-300"
          x-transition:enter-start="opacity-0"
          x-transition:enter-end="opacity-100"
-         x-transition:leave="transition-opacity ease-in duration-400"
+         x-transition:leave="transition-opacity ease-in duration-200"
          x-transition:leave-start="opacity-100"
          x-transition:leave-end="opacity-0"
-         @click="show = false; $wire.close()"
-         class="fixed inset-0 bg-black/50 backdrop-blur-xs"></div>
+         @click="show = false"
+         class="fixed inset-0 bg-black/40"></div>
 
-    <!-- Sliding Menu Container (Smooth Right-to-Left Slide Effect) -->
+    <!-- Sliding Menu Container (Silky-Smooth 60fps Right-to-Left Slide) -->
     <div x-show="show"
-         x-transition:enter="transform transition ease-out duration-500"
+         x-transition:enter="transform transition ease-[cubic-bezier(0.16,1,0.3,1)] duration-400"
          x-transition:enter-start="translate-x-full"
          x-transition:enter-end="translate-x-0"
-         x-transition:leave="transform transition ease-in duration-400"
+         x-transition:leave="transform transition ease-in duration-250"
          x-transition:leave-start="translate-x-0"
          x-transition:leave-end="translate-x-full"
+         style="will-change: transform;"
          class="fixed inset-0 w-full h-full bg-white flex flex-col overflow-y-auto shadow-2xl">
 
         <!-- ========================================================================= -->
@@ -30,12 +33,12 @@
         <!-- ========================================================================= -->
         <div class="px-6 sm:px-10 lg:px-14 py-4 border-b border-[#C59B27] flex items-center justify-between shrink-0 bg-white">
             <!-- Logo -->
-            <a href="{{ route('home') }}" @click="show = false; $wire.close()" class="flex items-center">
+            <a href="{{ route('home') }}" @click="show = false" class="flex items-center">
                 <img src="/logo.png" alt="7A GLOBAL MACHINERY" class="h-10 sm:h-12 lg:h-14 w-auto object-contain">
             </a>
 
             <!-- Minimalist Close 'X' Button -->
-            <button @click="show = false; $wire.close()" 
+            <button @click="show = false" 
                     type="button" 
                     aria-label="Close menu"
                     class="group relative w-10 h-10 flex items-center justify-center p-2 focus:outline-hidden cursor-pointer hover:scale-110 transition-transform">
@@ -65,16 +68,16 @@
                             <div class="h-32 lg:h-36 flex items-center justify-center mb-4 overflow-hidden">
                                 <img src="/images/menu-e2.jpg" alt="e² line" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
                             </div>
-                            <a href="#solutions" @click="show = false; $wire.close()" class="block text-sm font-bold text-[#C59B27] mb-2 uppercase tracking-wide hover:underline">
+                            <a href="#solutions" @click="show = false" class="block text-sm font-bold text-[#C59B27] mb-2 uppercase tracking-wide hover:underline">
                                 e² line
                             </a>
                             <ul class="space-y-1 text-xs text-[#1E252D] font-normal leading-relaxed">
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">E2 100.25</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">E2 120.25</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">E2 140.25</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">E2 140.30</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">E2 160.30</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">E2 200.30</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">E2 100.25</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">E2 120.25</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">E2 140.25</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">E2 140.30</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">E2 160.30</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">E2 200.30</a></li>
                             </ul>
                         </div>
 
@@ -83,19 +86,19 @@
                             <div class="h-32 lg:h-36 flex items-center justify-center mb-4 overflow-hidden">
                                 <img src="/images/menu-g.jpg" alt="G line" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
                             </div>
-                            <a href="#solutions" @click="show = false; $wire.close()" class="block text-sm font-bold text-[#C59B27] mb-2 uppercase tracking-wide hover:underline">
+                            <a href="#solutions" @click="show = false" class="block text-sm font-bold text-[#C59B27] mb-2 uppercase tracking-wide hover:underline">
                                 G line
                             </a>
                             <ul class="space-y-1 text-xs text-[#1E252D] font-normal leading-relaxed">
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">G14.25</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">G15.35</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">G18.35</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">G21.35</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">G26.35</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">G32.35</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">G21.50</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">G26.50</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">G32.50</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">G14.25</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">G15.35</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">G18.35</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">G21.35</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">G26.35</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">G32.35</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">G21.50</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">G26.50</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">G32.50</a></li>
                             </ul>
                         </div>
 
@@ -104,18 +107,18 @@
                             <div class="h-32 lg:h-36 flex items-center justify-center mb-4 overflow-hidden">
                                 <img src="/images/menu-7a.jpg" alt="7A line" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
                             </div>
-                            <a href="#solutions" @click="show = false; $wire.close()" class="block text-sm font-bold text-[#C59B27] mb-2 uppercase tracking-wide hover:underline">
+                            <a href="#solutions" @click="show = false" class="block text-sm font-bold text-[#C59B27] mb-2 uppercase tracking-wide hover:underline">
                                 7A line
                             </a>
                             <ul class="space-y-1 text-xs text-[#1E252D] font-normal leading-relaxed">
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">7A 100.20</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">7A 120.20</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">7A 100.25</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">7A 120.25</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">7A 140.25</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">7A 140.30</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">7A 160.30</a></li>
-                                <li><a href="#solutions" @click="show = false; $wire.close()" class="hover:text-[#C59B27] transition-colors">7A 200.30</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">7A 100.20</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">7A 120.20</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">7A 100.25</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">7A 120.25</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">7A 140.25</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">7A 140.30</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">7A 160.30</a></li>
+                                <li><a href="#solutions" @click="show = false" class="hover:text-[#C59B27] transition-colors">7A 200.30</a></li>
                             </ul>
                         </div>
                     </div>
@@ -126,24 +129,24 @@
                     <!-- 2 Columns of Main Navigation Links -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-10">
                         <div class="space-y-3">
-                            <a href="#about" @click="show = false; $wire.close()" class="text-xl sm:text-2xl lg:text-[28px] font-light uppercase tracking-[0.05em] text-[#1E252D] hover:text-[#C59B27] transition-colors block">
+                            <a href="#about" @click="show = false" class="text-xl sm:text-2xl lg:text-[28px] font-light uppercase tracking-[0.05em] text-[#1E252D] hover:text-[#C59B27] transition-colors block">
                                 COMPANY
                             </a>
-                            <a href="#technology" @click="show = false; $wire.close()" class="text-xl sm:text-2xl lg:text-[28px] font-light uppercase tracking-[0.05em] text-[#1E252D] hover:text-[#C59B27] transition-colors block">
+                            <a href="#technology" @click="show = false" class="text-xl sm:text-2xl lg:text-[28px] font-light uppercase tracking-[0.05em] text-[#1E252D] hover:text-[#C59B27] transition-colors block">
                                 TECHNOLOGY
                             </a>
-                            <a href="#solutions" @click="show = false; $wire.close()" class="text-xl sm:text-2xl lg:text-[28px] font-light uppercase tracking-[0.05em] text-[#1E252D] hover:text-[#C59B27] transition-colors block">
+                            <a href="#solutions" @click="show = false" class="text-xl sm:text-2xl lg:text-[28px] font-light uppercase tracking-[0.05em] text-[#1E252D] hover:text-[#C59B27] transition-colors block">
                                 PRODUCTS
                             </a>
                         </div>
                         <div class="space-y-3">
-                            <a href="#service" @click="show = false; $wire.close()" class="text-xl sm:text-2xl lg:text-[28px] font-light uppercase tracking-[0.05em] text-[#1E252D] hover:text-[#C59B27] transition-colors block">
+                            <a href="#service" @click="show = false" class="text-xl sm:text-2xl lg:text-[28px] font-light uppercase tracking-[0.05em] text-[#1E252D] hover:text-[#C59B27] transition-colors block">
                                 SERVICES
                             </a>
-                            <a href="#finder" @click="show = false; $wire.close()" class="text-xl sm:text-2xl lg:text-[28px] font-light uppercase tracking-[0.05em] text-[#1E252D] hover:text-[#C59B27] transition-colors block">
+                            <a href="#finder" @click="show = false" class="text-xl sm:text-2xl lg:text-[28px] font-light uppercase tracking-[0.05em] text-[#1E252D] hover:text-[#C59B27] transition-colors block">
                                 MEDIA
                             </a>
-                            <a href="#contact" @click="show = false; $wire.close()" class="text-xl sm:text-2xl lg:text-[28px] font-light uppercase tracking-[0.05em] text-[#1E252D] hover:text-[#C59B27] transition-colors block">
+                            <a href="#contact" @click="show = false" class="text-xl sm:text-2xl lg:text-[28px] font-light uppercase tracking-[0.05em] text-[#1E252D] hover:text-[#C59B27] transition-colors block">
                                 CONTACTS
                             </a>
                         </div>
@@ -193,7 +196,7 @@
                         Distributor Login
                     </div>
                     <a href="#contact" 
-                       @click="show = false; $wire.close()"
+                       @click="show = false"
                        class="inline-flex items-center gap-2 text-sm font-semibold tracking-wider text-white hover:text-white/80 group">
                         <span>MY7A</span>
                         <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 11 5" fill="none" stroke="currentColor">

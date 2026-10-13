@@ -38,7 +38,7 @@
             </main>
 
             <!-- Architectural Footer -->
-            @include('components.public.footer')
+            <livewire:public.footer />
         </div>
 
         @livewireScripts

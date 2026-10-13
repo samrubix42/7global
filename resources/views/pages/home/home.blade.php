@@ -107,190 +107,119 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 2. SECTION HEAD (GMP Reference: "LEADING FLATWORK IRONER MANUFACTURER") -->
     <!-- ========================================================================= -->
-    <section class="py-14 lg:py-20 bg-white border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-                <div>
-                    <span class="text-xs font-bold tracking-[0.25em] uppercase text-[#C59B27] block mb-2">MANUFACTURING SPECIALIZATION</span>
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[#1E252D] uppercase leading-tight">
-                        LEADING<br>
-                        <span class="text-[#C59B27]">FLATWORK IRONER</span> MANUFACTURER
-                    </h2>
-                </div>
-                <div class="max-w-md text-sm text-[#64748B] leading-relaxed">
-                    <p>
-                        <strong>7A Global Machinery Pvt. Ltd.</strong> engineers and builds high-precision commercial flatwork ironers and drying ironers for hotels, healthcare facilities, and commercial laundry plants worldwide.
-                    </p>
-                </div>
-            </div>
+    <!-- 2. SECTION HEAD & CLEAN ARCHITECTURAL CARDS (Exact match to user screenshot) -->
+    <!-- ========================================================================= -->
+    <section class="bg-white pt-14 lg:pt-20 pb-6">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+            <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#C59B27]"
+                style="font-family: 'new-hero', sans-serif;">
+                FLATWORK IRONER MANUFACTURER
+            </h2>
         </div>
     </section>
 
-    <!-- ========================================================================= -->
-    <!-- 3. PRODUCT SOLUTIONS 3-BOX GRID (Exact GMP #solutions layout & styling) -->
-    <!-- ========================================================================= -->
-    <section id="solutions" class="bg-[#FCFCFA] py-16 lg:py-24 border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- BOX 1: E2 LINE - Chest Heated Flatwork Ironers -->
-                <div class="group bg-white border border-slate-200 hover:border-[#C59B27] p-8 rounded shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+    <!-- 3-Column Clean Card Grid with Architectural Dividers & Flush Corner Buttons -->
+    <section id="solutions" class="bg-white border-t border-b border-[#C59B27]/40">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#C59B27]/40">
+                <!-- CARD 1: e² line -->
+                <div class="relative bg-white p-8 sm:p-10 lg:p-14 pb-20 flex flex-col justify-between group">
                     <div>
-                        <!-- Machine Image -->
-                        <div class="aspect-4/3 overflow-hidden rounded bg-slate-50 mb-6 flex items-center justify-center p-2 border border-slate-100">
-                            <img src="/images/product-ironer.jpg" 
-                                 alt="E2 Chest Ironer Line" 
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <!-- Machine Image (Clean isolated photo) -->
+                        <div class="h-44 sm:h-48 lg:h-52 flex items-center justify-center mb-8 overflow-hidden">
+                            <img src="/images/menu-e2.jpg" 
+                                 alt="e² line flatwork ironer" 
+                                 class="max-h-full max-w-full object-contain group-hover:scale-102 transition-transform duration-300">
                         </div>
 
-                        <!-- Brand Badge / Model Line -->
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="px-2.5 py-1 text-[11px] font-bold tracking-wider uppercase bg-[#C59B27]/10 text-[#C59B27] rounded">
-                                Chest Heated Line
-                            </span>
-                            <span class="text-xs font-bold text-slate-400">E2 LINE</span>
-                        </div>
-
-                        <h3 class="text-xl font-bold text-[#1E252D] group-hover:text-[#C59B27] transition-colors mb-3">
-                            E2 Flatwork Ironers
+                        <!-- Title in Brand Gold -->
+                        <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#C59B27] tracking-tight mb-5"
+                            style="font-family: 'new-hero', sans-serif;">
+                            e² line
                         </h3>
 
-                        <p class="text-xs text-[#64748B] leading-relaxed mb-4">
-                            Evolution meets finest ironing finish and ease of use. Create an ironing solution tailored to your hospitality business choosing from 6 chest heated ironer sizes.
-                        </p>
-
-                        <div class="space-y-1.5 py-3 border-y border-slate-100 text-xs text-slate-700">
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">Roller Diameter:</span>
-                                <span class="font-semibold">Ø 250 - 300 mm</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">Working Widths:</span>
-                                <span class="font-semibold">1.0 m to 2.0 m</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">Heating Options:</span>
-                                <span class="font-semibold text-[#C59B27]">Electric / Steam / Gas</span>
-                            </div>
+                        <!-- Clean Description Text -->
+                        <div class="space-y-4 text-xs sm:text-[13px] text-[#1E252D] font-light leading-relaxed">
+                            <p>Evolution meets finest ironing finish and ease of use.</p>
+                            <p>Create an ironing solution that is tailored to your business choosing from 6 chest heated ironers sizes.</p>
                         </div>
                     </div>
 
-                    <!-- Arrow Link (GMP arrow-link arr-w style) -->
-                    <div class="mt-6 pt-4 flex items-center justify-between">
-                        <span class="text-xs font-bold uppercase tracking-wider text-[#1E252D] group-hover:text-[#C59B27] transition-colors">
-                            Explore E2 Line
-                        </span>
-                        <div class="w-10 h-10 rounded-full border border-slate-200 group-hover:border-[#C59B27] group-hover:bg-[#C59B27] group-hover:text-white flex items-center justify-center text-[#1E252D] transition-all">
-                            <svg class="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                        </div>
-                    </div>
+                    <!-- Bottom Right Docked Square Button (Exact GMP Style in Brand Gold) -->
+                    <a href="#contact" 
+                       aria-label="Explore e² line"
+                       class="absolute bottom-0 right-0 w-12 h-12 bg-[#C59B27] hover:bg-[#9A7514] text-white flex items-center justify-center transition-colors cursor-pointer">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </a>
                 </div>
 
-                <!-- BOX 2: G LINE - Drying Flatwork Ironers -->
-                <div class="group bg-white border border-slate-200 hover:border-[#C59B27] p-8 rounded shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                <!-- CARD 2: G line -->
+                <div class="relative bg-white p-8 sm:p-10 lg:p-14 pb-20 flex flex-col justify-between group">
                     <div>
                         <!-- Machine Image -->
-                        <div class="aspect-4/3 overflow-hidden rounded bg-slate-50 mb-6 flex items-center justify-center p-2 border border-slate-100">
-                            <img src="/images/hero-1.jpg" 
-                                 alt="G-Line Drying Ironers" 
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="h-44 sm:h-48 lg:h-52 flex items-center justify-center mb-8 overflow-hidden">
+                            <img src="/images/menu-g.jpg" 
+                                 alt="G line drying ironer" 
+                                 class="max-h-full max-w-full object-contain group-hover:scale-102 transition-transform duration-300">
                         </div>
 
-                        <!-- Brand Badge / Model Line -->
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="px-2.5 py-1 text-[11px] font-bold tracking-wider uppercase bg-[#1E252D] text-[#C59B27] rounded">
-                                High Moisture Drying
-                            </span>
-                            <span class="text-xs font-bold text-slate-400">G LINE</span>
-                        </div>
-
-                        <h3 class="text-xl font-bold text-[#1E252D] group-hover:text-[#C59B27] transition-colors mb-3">
-                            G-Line Drying Ironers
+                        <!-- Title in Brand Gold -->
+                        <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#C59B27] tracking-tight mb-5"
+                            style="font-family: 'new-hero', sans-serif;">
+                            G line
                         </h3>
 
-                        <p class="text-xs text-[#64748B] leading-relaxed mb-4">
-                            When maximum performance and high evaporation capacity are the primary focus. 9 cylinder heated sizes for continuous non-stop laundry productivity.
-                        </p>
-
-                        <div class="space-y-1.5 py-3 border-y border-slate-100 text-xs text-slate-700">
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">Roller Diameter:</span>
-                                <span class="font-semibold">Ø 350 - 500 mm</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">Working Widths:</span>
-                                <span class="font-semibold">1.4 m to 3.2 m</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">Initial Moisture:</span>
-                                <span class="font-semibold text-[#C59B27]">Up to 50% Direct Drying</span>
-                            </div>
+                        <!-- Clean Description Text -->
+                        <div class="space-y-4 text-xs sm:text-[13px] text-[#1E252D] font-light leading-relaxed">
+                            <p>When maximum performance and efficiency are the focus.</p>
+                            <p>9 cylinder heated ironer sizes and countless versions for a non-stop productivity.</p>
                         </div>
                     </div>
 
-                    <!-- Arrow Link -->
-                    <div class="mt-6 pt-4 flex items-center justify-between">
-                        <span class="text-xs font-bold uppercase tracking-wider text-[#1E252D] group-hover:text-[#C59B27] transition-colors">
-                            Explore G Line
-                        </span>
-                        <div class="w-10 h-10 rounded-full border border-slate-200 group-hover:border-[#C59B27] group-hover:bg-[#C59B27] group-hover:text-white flex items-center justify-center text-[#1E252D] transition-all">
-                            <svg class="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                        </div>
-                    </div>
+                    <!-- Bottom Right Docked Square Button -->
+                    <a href="#contact" 
+                       aria-label="Explore G line"
+                       class="absolute bottom-0 right-0 w-12 h-12 bg-[#C59B27] hover:bg-[#9A7514] text-white flex items-center justify-center transition-colors cursor-pointer">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </a>
                 </div>
 
-                <!-- BOX 3: 7A PRO LINE - Heavy Commercial Line -->
-                <div class="group bg-white border border-slate-200 hover:border-[#C59B27] p-8 rounded shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                <!-- CARD 3: 7A line (GMP line) -->
+                <div class="relative bg-white p-8 sm:p-10 lg:p-14 pb-20 flex flex-col justify-between group">
                     <div>
                         <!-- Machine Image -->
-                        <div class="aspect-4/3 overflow-hidden rounded bg-slate-50 mb-6 flex items-center justify-center p-2 border border-slate-100">
-                            <img src="/images/hero-2.jpg" 
-                                 alt="Commercial Line" 
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="h-44 sm:h-48 lg:h-52 flex items-center justify-center mb-8 overflow-hidden">
+                            <img src="/images/menu-7a.jpg" 
+                                 alt="7A line chest ironer" 
+                                 class="max-h-full max-w-full object-contain group-hover:scale-102 transition-transform duration-300">
                         </div>
 
-                        <!-- Brand Badge / Model Line -->
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="px-2.5 py-1 text-[11px] font-bold tracking-wider uppercase bg-[#C59B27] text-white rounded">
-                                Industrial Heavy-Duty
-                            </span>
-                            <span class="text-xs font-bold text-slate-400">7A PRO LINE</span>
-                        </div>
-
-                        <h3 class="text-xl font-bold text-[#1E252D] group-hover:text-[#C59B27] transition-colors mb-3">
-                            Industrial Finishing Systems
+                        <!-- Title in Brand Gold -->
+                        <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#C59B27] tracking-tight mb-5"
+                            style="font-family: 'new-hero', sans-serif;">
+                            7A line
                         </h3>
 
-                        <p class="text-xs text-[#64748B] leading-relaxed mb-4">
-                            Automated feeders, vacuum transfer tables, and high-speed precision folders designed to eliminate finishing bottlenecks and optimize laundry floor labor.
-                        </p>
-
-                        <div class="space-y-1.5 py-3 border-y border-slate-100 text-xs text-slate-700">
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">Operation Mode:</span>
-                                <span class="font-semibold">Continuous Automated</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">Folding Speed:</span>
-                                <span class="font-semibold">Up to 45 m / min</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">Integration:</span>
-                                <span class="font-semibold text-[#C59B27]">PLC Synchronized</span>
-                            </div>
+                        <!-- Clean Description Text -->
+                        <div class="space-y-4 text-xs sm:text-[13px] text-[#1E252D] font-light leading-relaxed">
+                            <p>Your very first steps into flatwork ironing.</p>
+                            <p>8 basic models of chest heated ironer for a compact, simple and efficient performance.</p>
                         </div>
                     </div>
 
-                    <!-- Arrow Link -->
-                    <div class="mt-6 pt-4 flex items-center justify-between">
-                        <span class="text-xs font-bold uppercase tracking-wider text-[#1E252D] group-hover:text-[#C59B27] transition-colors">
-                            Explore Automation
-                        </span>
-                        <div class="w-10 h-10 rounded-full border border-slate-200 group-hover:border-[#C59B27] group-hover:bg-[#C59B27] group-hover:text-white flex items-center justify-center text-[#1E252D] transition-all">
-                            <svg class="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                        </div>
-                    </div>
+                    <!-- Bottom Right Docked Square Button -->
+                    <a href="#contact" 
+                       aria-label="Explore 7A line"
+                       class="absolute bottom-0 right-0 w-12 h-12 bg-[#C59B27] hover:bg-[#9A7514] text-white flex items-center justify-center transition-colors cursor-pointer">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

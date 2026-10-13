@@ -33,14 +33,14 @@
             <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/20"></div>
 
             <!-- Floating Hero Card -->
-            <div class="absolute inset-0 flex items-center justify-end px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
-                <div class="bg-white/85 backdrop-blur-xs p-8 sm:p-12 lg:p-16 max-w-lg lg:max-w-xl animate-fadeIn">
-                    <h1 class="text-2xl sm:text-3xl lg:text-[38px] font-normal tracking-[0.08em] text-[#C59B27] uppercase leading-[1.3] mb-8 lg:mb-12">
+            <div class="absolute inset-0 flex items-center justify-center sm:justify-end px-4 sm:px-12 lg:px-20 max-w-7xl mx-auto">
+                <div class="bg-white/85 backdrop-blur-xs p-6 sm:p-12 lg:p-16 max-w-xs sm:max-w-lg lg:max-w-xl animate-fadeIn">
+                    <h1 class="text-xl sm:text-3xl lg:text-[38px] font-normal tracking-[0.08em] text-[#C59B27] uppercase leading-[1.3] mb-4 sm:mb-8 lg:mb-12">
                         A DELICATE TOUCH<br>
                         FOR AN IMPECCABLE<br>
                         IRONING FINISH
                     </h1>
-                    <div class="text-xl sm:text-2xl lg:text-[30px] font-normal tracking-[0.14em] text-[#C59B27] uppercase">
+                    <div class="text-lg sm:text-2xl lg:text-[30px] font-normal tracking-[0.14em] text-[#C59B27] uppercase">
                         WE KNOW-HOW
                     </div>
                 </div>
@@ -56,14 +56,14 @@
                  :class="currentSlide === 1 ? 'scale-100' : 'scale-105'">
             <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
 
-            <div class="absolute inset-0 flex items-center justify-end px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
-                <div class="bg-white/85 backdrop-blur-xs p-8 sm:p-12 lg:p-16 max-w-lg lg:max-w-xl">
-                    <h2 class="text-2xl sm:text-3xl lg:text-[38px] font-normal tracking-[0.08em] text-[#C59B27] uppercase leading-[1.3] mb-8 lg:mb-12">
+            <div class="absolute inset-0 flex items-center justify-center sm:justify-end px-4 sm:px-12 lg:px-20 max-w-7xl mx-auto">
+                <div class="bg-white/85 backdrop-blur-xs p-6 sm:p-12 lg:p-16 max-w-xs sm:max-w-lg lg:max-w-xl">
+                    <h2 class="text-xl sm:text-3xl lg:text-[38px] font-normal tracking-[0.08em] text-[#C59B27] uppercase leading-[1.3] mb-4 sm:mb-8 lg:mb-12">
                         E2 & G-LINE<br>
                         DESIGNED<br>
                         AROUND YOU
                     </h2>
-                    <div class="text-xl sm:text-2xl lg:text-[30px] font-normal tracking-[0.14em] text-[#C59B27] uppercase">
+                    <div class="text-lg sm:text-2xl lg:text-[30px] font-normal tracking-[0.14em] text-[#C59B27] uppercase">
                         WE KNOW-HOW
                     </div>
                 </div>
@@ -79,14 +79,14 @@
                  :class="currentSlide === 2 ? 'scale-100' : 'scale-105'">
             <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/10"></div>
 
-            <div class="absolute inset-0 flex items-center justify-end px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
-                <div class="bg-white/85 backdrop-blur-xs p-8 sm:p-12 lg:p-16 max-w-lg lg:max-w-xl">
-                    <h2 class="text-2xl sm:text-3xl lg:text-[38px] font-normal tracking-[0.08em] text-[#C59B27] uppercase leading-[1.3] mb-8 lg:mb-12">
+            <div class="absolute inset-0 flex items-center justify-center sm:justify-end px-4 sm:px-12 lg:px-20 max-w-7xl mx-auto">
+                <div class="bg-white/85 backdrop-blur-xs p-6 sm:p-12 lg:p-16 max-w-xs sm:max-w-lg lg:max-w-xl">
+                    <h2 class="text-xl sm:text-3xl lg:text-[38px] font-normal tracking-[0.08em] text-[#C59B27] uppercase leading-[1.3] mb-4 sm:mb-8 lg:mb-12">
                         THE CHOICE<br>
                         OF INDUSTRIAL<br>
                         PERFECTION
                     </h2>
-                    <div class="text-xl sm:text-2xl lg:text-[30px] font-normal tracking-[0.14em] text-[#C59B27] uppercase">
+                    <div class="text-lg sm:text-2xl lg:text-[30px] font-normal tracking-[0.14em] text-[#C59B27] uppercase">
                         WE KNOW-HOW
                     </div>
                 </div>

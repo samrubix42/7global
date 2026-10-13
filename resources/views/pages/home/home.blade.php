@@ -93,7 +93,7 @@
             </div>
         </div>
 
-        <!-- GMP-Style Dash Indicators at Bottom Center (Exactly as in screenshot!) -->
+        <!-- GMP-Style Dash Indicators at Bottom Center (Exactly as in screenshot) -->
         <div class="absolute bottom-6 inset-x-0 z-20 flex justify-center items-center gap-2.5">
             <template x-for="(slide, index) in slidesCount" :key="index">
                 <button @click="goToSlide(index)"
@@ -107,8 +107,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- ========================================================================= -->
-    <!-- 2. SECTION HEAD & CLEAN ARCHITECTURAL CARDS (Exact match to user screenshot) -->
+    <!-- 2. SECTION HEAD & CLEAN ARCHITECTURAL CARDS (Exact match to media_1791869675465.png) -->
     <!-- ========================================================================= -->
     <section class="bg-white pt-14 lg:pt-20 pb-6">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
@@ -120,9 +119,9 @@
     </section>
 
     <!-- 3-Column Clean Card Grid with Architectural Dividers & Flush Corner Buttons -->
-    <section id="solutions" class="bg-white border-t border-b border-[#C59B27]/40">
+    <section id="solutions" class="bg-white border-t border-b border-[#C59B27]">
         <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#C59B27]/40">
+            <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#C59B27]">
                 <!-- CARD 1: e² line -->
                 <div class="relative bg-white p-8 sm:p-10 lg:p-14 pb-20 flex flex-col justify-between group">
                     <div>
@@ -149,7 +148,7 @@
                     <!-- Bottom Right Docked Square Button (Exact GMP Style in Brand Gold) -->
                     <a href="#contact" 
                        aria-label="Explore e² line"
-                       class="absolute bottom-0 right-0 w-12 h-12 bg-[#C59B27] hover:bg-[#9A7514] text-white flex items-center justify-center transition-colors cursor-pointer">
+                       class="absolute bottom-0 right-0 w-[50px] h-[50px] bg-[#C59B27] hover:bg-[#9A7514] text-white flex items-center justify-center transition-colors cursor-pointer">
                         <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                         </svg>
@@ -182,7 +181,7 @@
                     <!-- Bottom Right Docked Square Button -->
                     <a href="#contact" 
                        aria-label="Explore G line"
-                       class="absolute bottom-0 right-0 w-12 h-12 bg-[#C59B27] hover:bg-[#9A7514] text-white flex items-center justify-center transition-colors cursor-pointer">
+                       class="absolute bottom-0 right-0 w-[50px] h-[50px] bg-[#C59B27] hover:bg-[#9A7514] text-white flex items-center justify-center transition-colors cursor-pointer">
                         <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                         </svg>
@@ -215,7 +214,7 @@
                     <!-- Bottom Right Docked Square Button -->
                     <a href="#contact" 
                        aria-label="Explore 7A line"
-                       class="absolute bottom-0 right-0 w-12 h-12 bg-[#C59B27] hover:bg-[#9A7514] text-white flex items-center justify-center transition-colors cursor-pointer">
+                       class="absolute bottom-0 right-0 w-[50px] h-[50px] bg-[#C59B27] hover:bg-[#9A7514] text-white flex items-center justify-center transition-colors cursor-pointer">
                         <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                         </svg>
@@ -226,362 +225,389 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 4. INTERACTIVE IRONER FINDER (Matching GMP's #finder_cta) -->
+    <!-- 3. SECTION HEAD & INTERACTIVE IRONER FINDER (Architectural Pattern) -->
     <!-- ========================================================================= -->
-    <section id="finder" class="py-16 lg:py-24 bg-white border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-xs font-bold tracking-[0.25em] uppercase text-[#C59B27] block mb-2">QUICK CONFIGURATOR</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-[#1E252D]">
-                    IRONER FINDER
-                </h2>
-                <p class="text-xs sm:text-sm text-[#64748B] mt-3">
-                    Use our interactive recommendation tool to discover the optimal model to suit your exact linen dimensions and hourly volume.
-                </p>
-            </div>
+    <section class="bg-white pt-14 lg:pt-20 pb-6">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+            <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#C59B27]"
+                style="font-family: 'new-hero', sans-serif;">
+                IRONER FINDER
+            </h2>
+        </div>
+    </section>
 
-            <!-- Interactive Selector Widget -->
-            <div class="bg-[#FAF9F5] border border-slate-200 p-6 sm:p-10 rounded-lg shadow-sm">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Filter 1: Facility Type -->
+    <!-- 3-Column Architectural Finder Grid -->
+    <section id="finder" class="bg-white border-t border-b border-[#C59B27]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-[#C59B27]">
+                <!-- STEP 1: Facility Type -->
+                <div class="p-8 sm:p-10 lg:p-14 bg-white flex flex-col justify-between">
                     <div>
-                        <label class="block text-xs font-bold tracking-wider uppercase text-[#1E252D] mb-3">
-                            1. Select Facility Type
-                        </label>
-                        <div class="grid grid-cols-2 gap-2.5">
+                        <span class="text-[11px] font-bold tracking-[0.25em] uppercase text-[#64748B] block mb-4">
+                            01. APPLICATION SECTOR
+                        </span>
+                        <h3 class="text-xl sm:text-2xl font-normal text-[#1E252D] mb-6" style="font-family: 'new-hero', sans-serif;">
+                            Select Facility
+                        </h3>
+                        <div class="space-y-2.5">
                             <button type="button" 
                                     wire:click="setFilter('facility', 'hotel')"
-                                    class="p-3 text-xs font-semibold rounded border text-left transition-all {{ $facility === 'hotel' ? 'border-[#C59B27] bg-[#C59B27] text-white shadow-xs' : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300' }}">
-                                Luxury Hotels & Resorts
+                                    class="w-full text-left py-3 px-4 border transition-all text-xs tracking-wider uppercase font-normal cursor-pointer flex items-center justify-between {{ $facility === 'hotel' ? 'border-[#C59B27] bg-[#C59B27] text-white' : 'border-slate-200 text-[#1E252D] hover:border-[#C59B27]' }}">
+                                <span>Luxury Hotels & Resorts</span>
+                                <span class="text-xs {{ $facility === 'hotel' ? 'opacity-100' : 'opacity-0' }}">✓</span>
                             </button>
                             <button type="button" 
                                     wire:click="setFilter('facility', 'hospital')"
-                                    class="p-3 text-xs font-semibold rounded border text-left transition-all {{ $facility === 'hospital' ? 'border-[#C59B27] bg-[#C59B27] text-white shadow-xs' : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300' }}">
-                                Hospital & Healthcare
+                                    class="w-full text-left py-3 px-4 border transition-all text-xs tracking-wider uppercase font-normal cursor-pointer flex items-center justify-between {{ $facility === 'hospital' ? 'border-[#C59B27] bg-[#C59B27] text-white' : 'border-slate-200 text-[#1E252D] hover:border-[#C59B27]' }}">
+                                <span>Healthcare & Hospitals</span>
+                                <span class="text-xs {{ $facility === 'hospital' ? 'opacity-100' : 'opacity-0' }}">✓</span>
                             </button>
                             <button type="button" 
                                     wire:click="setFilter('facility', 'commercial')"
-                                    class="p-3 text-xs font-semibold rounded border text-left transition-all {{ $facility === 'commercial' ? 'border-[#C59B27] bg-[#C59B27] text-white shadow-xs' : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300' }}">
-                                Commercial Laundry Plant
+                                    class="w-full text-left py-3 px-4 border transition-all text-xs tracking-wider uppercase font-normal cursor-pointer flex items-center justify-between {{ $facility === 'commercial' ? 'border-[#C59B27] bg-[#C59B27] text-white' : 'border-slate-200 text-[#1E252D] hover:border-[#C59B27]' }}">
+                                <span>Industrial Laundry Plant</span>
+                                <span class="text-xs {{ $facility === 'commercial' ? 'opacity-100' : 'opacity-0' }}">✓</span>
                             </button>
                             <button type="button" 
                                     wire:click="setFilter('facility', 'institution')"
-                                    class="p-3 text-xs font-semibold rounded border text-left transition-all {{ $facility === 'institution' ? 'border-[#C59B27] bg-[#C59B27] text-white shadow-xs' : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300' }}">
-                                Institutions & Cruise
+                                    class="w-full text-left py-3 px-4 border transition-all text-xs tracking-wider uppercase font-normal cursor-pointer flex items-center justify-between {{ $facility === 'institution' ? 'border-[#C59B27] bg-[#C59B27] text-white' : 'border-slate-200 text-[#1E252D] hover:border-[#C59B27]' }}">
+                                <span>Cruise & Institutions</span>
+                                <span class="text-xs {{ $facility === 'institution' ? 'opacity-100' : 'opacity-0' }}">✓</span>
                             </button>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Filter 2: Hourly Capacity -->
+                <!-- STEP 2: Hourly Capacity & Heating -->
+                <div class="p-8 sm:p-10 lg:p-14 bg-white flex flex-col justify-between">
                     <div>
-                        <label class="block text-xs font-bold tracking-wider uppercase text-[#1E252D] mb-3">
-                            2. Output Capacity (Kg / hr)
-                        </label>
-                        <div class="grid grid-cols-1 gap-2.5">
+                        <span class="text-[11px] font-bold tracking-[0.25em] uppercase text-[#64748B] block mb-4">
+                            02. VOLUME & MEDIUM
+                        </span>
+                        <h3 class="text-xl sm:text-2xl font-normal text-[#1E252D] mb-6" style="font-family: 'new-hero', sans-serif;">
+                            Hourly Capacity
+                        </h3>
+                        <div class="space-y-2.5 mb-8">
                             <button type="button" 
                                     wire:click="setFilter('capacity', 'compact')"
-                                    class="p-3 text-xs font-semibold rounded border text-left flex justify-between items-center transition-all {{ $capacity === 'compact' ? 'border-[#C59B27] bg-[#C59B27] text-white shadow-xs' : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300' }}">
+                                    class="w-full text-left py-3 px-4 border transition-all text-xs tracking-wider uppercase font-normal cursor-pointer flex items-center justify-between {{ $capacity === 'compact' ? 'border-[#C59B27] bg-[#C59B27] text-white' : 'border-slate-200 text-[#1E252D] hover:border-[#C59B27]' }}">
                                 <span>Compact OPL (30 - 60 kg/h)</span>
-                                <span class="text-[10px] uppercase font-bold opacity-80">1.0m - 1.4m width</span>
+                                <span class="text-xs {{ $capacity === 'compact' ? 'opacity-100' : 'opacity-0' }}">✓</span>
                             </button>
                             <button type="button" 
                                     wire:click="setFilter('capacity', 'medium')"
-                                    class="p-3 text-xs font-semibold rounded border text-left flex justify-between items-center transition-all {{ $capacity === 'medium' ? 'border-[#C59B27] bg-[#C59B27] text-white shadow-xs' : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300' }}">
-                                <span>Mid-Scale Industrial (70 - 150 kg/h)</span>
-                                <span class="text-[10px] uppercase font-bold opacity-80">1.6m - 2.1m width</span>
+                                    class="w-full text-left py-3 px-4 border transition-all text-xs tracking-wider uppercase font-normal cursor-pointer flex items-center justify-between {{ $capacity === 'medium' ? 'border-[#C59B27] bg-[#C59B27] text-white' : 'border-slate-200 text-[#1E252D] hover:border-[#C59B27]' }}">
+                                <span>Medium Industrial (70 - 150 kg/h)</span>
+                                <span class="text-xs {{ $capacity === 'medium' ? 'opacity-100' : 'opacity-0' }}">✓</span>
                             </button>
                             <button type="button" 
                                     wire:click="setFilter('capacity', 'heavy')"
-                                    class="p-3 text-xs font-semibold rounded border text-left flex justify-between items-center transition-all {{ $capacity === 'heavy' ? 'border-[#C59B27] bg-[#C59B27] text-white shadow-xs' : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300' }}">
-                                <span>Heavy Industrial (160 - 320+ kg/h)</span>
-                                <span class="text-[10px] uppercase font-bold opacity-80">2.6m - 3.2m width</span>
+                                    class="w-full text-left py-3 px-4 border transition-all text-xs tracking-wider uppercase font-normal cursor-pointer flex items-center justify-between {{ $capacity === 'heavy' ? 'border-[#C59B27] bg-[#C59B27] text-white' : 'border-slate-200 text-[#1E252D] hover:border-[#C59B27]' }}">
+                                <span>High Capacity (160 - 320+ kg/h)</span>
+                                <span class="text-xs {{ $capacity === 'heavy' ? 'opacity-100' : 'opacity-0' }}">✓</span>
                             </button>
                         </div>
-                    </div>
 
-                    <!-- Filter 3: Heating Source -->
-                    <div>
-                        <label class="block text-xs font-bold tracking-wider uppercase text-[#1E252D] mb-3">
-                            3. Heating Medium
-                        </label>
-                        <div class="grid grid-cols-3 gap-2 mb-4">
+                        <span class="text-[11px] font-bold tracking-[0.25em] uppercase text-[#64748B] block mb-3">
+                            HEATING ENERGY
+                        </span>
+                        <div class="grid grid-cols-3 gap-2">
                             <button type="button" 
                                     wire:click="setFilter('heating', 'electric')"
-                                    class="p-3 text-xs font-semibold rounded border text-center transition-all {{ $heating === 'electric' ? 'border-[#C59B27] bg-[#C59B27] text-white shadow-xs' : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300' }}">
+                                    class="p-2.5 text-center border text-xs tracking-wider uppercase font-normal cursor-pointer {{ $heating === 'electric' ? 'border-[#C59B27] bg-[#C59B27] text-white' : 'border-slate-200 text-[#1E252D] hover:border-[#C59B27]' }}">
                                 Electric
                             </button>
                             <button type="button" 
                                     wire:click="setFilter('heating', 'steam')"
-                                    class="p-3 text-xs font-semibold rounded border text-center transition-all {{ $heating === 'steam' ? 'border-[#C59B27] bg-[#C59B27] text-white shadow-xs' : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300' }}">
+                                    class="p-2.5 text-center border text-xs tracking-wider uppercase font-normal cursor-pointer {{ $heating === 'steam' ? 'border-[#C59B27] bg-[#C59B27] text-white' : 'border-slate-200 text-[#1E252D] hover:border-[#C59B27]' }}">
                                 Steam
                             </button>
                             <button type="button" 
                                     wire:click="setFilter('heating', 'gas')"
-                                    class="p-3 text-xs font-semibold rounded border text-center transition-all {{ $heating === 'gas' ? 'border-[#C59B27] bg-[#C59B27] text-white shadow-xs' : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300' }}">
-                                Gas / Oil
+                                    class="p-2.5 text-center border text-xs tracking-wider uppercase font-normal cursor-pointer {{ $heating === 'gas' ? 'border-[#C59B27] bg-[#C59B27] text-white' : 'border-slate-200 text-[#1E252D] hover:border-[#C59B27]' }}">
+                                Gas
                             </button>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Instant Recommended Model Match -->
-                        <div class="bg-white border-2 border-[#C59B27] p-4 rounded shadow-xs">
-                            <span class="text-[10px] font-bold uppercase tracking-wider text-[#C59B27] block">Recommended Specification</span>
-                            <div class="text-base font-bold text-[#1E252D] mt-0.5">
-                                @if($capacity === 'compact')
-                                    7A-E2 140.30 Chest Ironer
-                                @elseif($capacity === 'medium')
-                                    7A-E2 200.30 Chest / G 21.35 Drying
-                                @else
-                                    7A-G 32.50 High-Moisture Drying Ironer
-                                @endif
+                <!-- STEP 3: Recommended Match & Action with Docked Corner Button -->
+                <div class="relative p-8 sm:p-10 lg:p-14 pb-20 bg-white flex flex-col justify-between">
+                    <div>
+                        <span class="text-[11px] font-bold tracking-[0.25em] uppercase text-[#C59B27] block mb-4">
+                            03. RECOMMENDED MODEL
+                        </span>
+
+                        <!-- Machine Photo for matching model -->
+                        <div class="h-32 flex items-center justify-center mb-6 overflow-hidden">
+                            @if($capacity === 'compact')
+                                <img src="/images/menu-e2.jpg" alt="e² Line Recommendation" class="max-h-full max-w-full object-contain">
+                            @elseif($capacity === 'medium')
+                                <img src="/images/menu-g.jpg" alt="G Line Recommendation" class="max-h-full max-w-full object-contain">
+                            @else
+                                <img src="/images/menu-7a.jpg" alt="7A Line Recommendation" class="max-h-full max-w-full object-contain">
+                            @endif
+                        </div>
+
+                        <h3 class="text-2xl sm:text-3xl font-bold text-[#1E252D] mb-4" style="font-family: 'new-hero', sans-serif;">
+                            @if($capacity === 'compact')
+                                e² 140.30 Line
+                            @elseif($capacity === 'medium')
+                                e² 200.30 / G 21.35
+                            @else
+                                G 32.50 Industrial
+                            @endif
+                        </h3>
+                        <p class="text-xs sm:text-[13px] text-[#1E252D] font-light leading-relaxed mb-6">
+                            Configured specifically for your selected output. Provides optimized linen contact pressure, automated speed synchronization, and minimum steam/power consumption.
+                        </p>
+
+                        <div class="border-t border-b border-slate-200 py-4 space-y-2 text-xs text-[#1E252D]">
+                            <div class="flex justify-between">
+                                <span class="text-[#64748B]">Heating:</span>
+                                <span class="font-semibold uppercase text-[#C59B27]">{{ $heating }}</span>
                             </div>
-                            <div class="text-[11px] text-[#64748B] mt-1">
-                                Heating: <strong class="text-[#1E252D] uppercase">{{ $heating }}</strong> | Sector: <strong class="text-[#1E252D] uppercase">{{ $facility }}</strong>
+                            <div class="flex justify-between">
+                                <span class="text-[#64748B]">Target Sector:</span>
+                                <span class="font-semibold uppercase text-[#1E252D]">{{ $facility }}</span>
                             </div>
-                            <a href="#contact" class="mt-3 block text-center py-2 px-3 bg-[#C59B27] hover:bg-[#9A7514] text-white text-xs font-bold uppercase tracking-wider rounded transition-colors">
-                                Inquire For This Model
-                            </a>
                         </div>
                     </div>
+
+                    <!-- Docked Corner Square Button -->
+                    <a href="#contact" 
+                       aria-label="Inquire for recommended model"
+                       class="absolute bottom-0 right-0 w-[50px] h-[50px] bg-[#C59B27] hover:bg-[#9A7514] text-white flex items-center justify-center transition-colors cursor-pointer">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 5. SERVICE & TECHNOLOGY (Matching GMP's #serv_tech_boxed) -->
+    <!-- 4. SECTION HEAD & SERVICE & TECHNOLOGY (Exact 2-Box Split Pattern) -->
     <!-- ========================================================================= -->
-    <section id="technology" class="py-16 lg:py-24 bg-[#FCFCFA] border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="text-center max-w-2xl mx-auto mb-14">
-                <span class="text-xs font-bold tracking-[0.25em] uppercase text-[#C59B27] block mb-2">ENGINEERING DISTINCTION</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-[#1E252D]">
-                    SERVICE & TECHNOLOGY
-                </h2>
-            </div>
+    <section class="bg-white pt-14 lg:pt-20 pb-6">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+            <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#C59B27]"
+                style="font-family: 'new-hero', sans-serif;">
+                SERVICE & TECHNOLOGY
+            </h2>
+        </div>
+    </section>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- SERVICE CARD -->
-                <div class="group bg-white border border-slate-200 hover:border-[#C59B27] p-8 sm:p-10 rounded shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+    <!-- 2-Box Architectural Split Grid with Docked Corner Buttons -->
+    <section id="technology" class="bg-white border-t border-b border-[#C59B27]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-[#C59B27]">
+                <!-- BOX 1: SERVICE -->
+                <div class="relative bg-white p-8 sm:p-10 lg:p-14 pb-20 flex flex-col justify-between group">
                     <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-2xl font-black uppercase tracking-tight text-[#1E252D] group-hover:text-[#C59B27] transition-colors">
-                                SERVICE
-                            </h3>
-                            <span class="w-2.5 h-2.5 rounded-full bg-[#C59B27]"></span>
+                        <div class="h-60 sm:h-72 lg:h-80 overflow-hidden mb-8">
+                            <img src="/images/hero-1.jpg" 
+                                 alt="Service and Technical Support" 
+                                 class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500">
                         </div>
-                        <div class="aspect-16/9 overflow-hidden rounded mb-6 border border-slate-100">
-                            <img src="/images/hero-1.jpg" alt="Service and Support" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        </div>
-                        <p class="text-xs sm:text-sm text-[#64748B] leading-relaxed">
-                            7A Global stands out for customer dedication before, during, and after commissioning. We provide prompt technical assistance, certified preventative maintenance kits, and remote telemetry diagnostics to guarantee continuous plant uptime.
+                        <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#C59B27] tracking-tight mb-4"
+                            style="font-family: 'new-hero', sans-serif;">
+                            SERVICE
+                        </h3>
+                        <p class="text-xs sm:text-[13px] text-[#1E252D] font-light leading-relaxed">
+                            7A Global has always stood out for its attention to the customer before, during, and after purchase, with an efficient and punctual technical service, enriched with constantly updated telemetry tools and genuine guaranteed spare parts.
                         </p>
                     </div>
 
-                    <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-bold uppercase tracking-wider text-[#1E252D]">
-                            Spare Parts & Support
-                        </span>
-                        <a href="#contact" class="w-10 h-10 rounded-full border border-slate-200 group-hover:border-[#C59B27] group-hover:bg-[#C59B27] group-hover:text-white flex items-center justify-center text-[#1E252D] transition-all">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                        </a>
-                    </div>
+                    <!-- Docked Corner Button -->
+                    <a href="#contact" 
+                       aria-label="Learn more about service"
+                       class="absolute bottom-0 right-0 w-[50px] h-[50px] bg-[#C59B27] hover:bg-[#9A7514] text-white flex items-center justify-center transition-colors cursor-pointer">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </a>
                 </div>
 
-                <!-- TECHNOLOGY CARD -->
-                <div class="group bg-white border border-slate-200 hover:border-[#C59B27] p-8 sm:p-10 rounded shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                <!-- BOX 2: TECHNOLOGY -->
+                <div class="relative bg-white p-8 sm:p-10 lg:p-14 pb-20 flex flex-col justify-between group">
                     <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-2xl font-black uppercase tracking-tight text-[#1E252D] group-hover:text-[#C59B27] transition-colors">
-                                TECHNOLOGY
-                            </h3>
-                            <span class="w-2.5 h-2.5 rounded-full bg-[#C59B27]"></span>
+                        <div class="h-60 sm:h-72 lg:h-80 overflow-hidden mb-8">
+                            <img src="/images/hero-2.jpg" 
+                                 alt="Machinery Technology" 
+                                 class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500">
                         </div>
-                        <div class="aspect-16/9 overflow-hidden rounded mb-6 border border-slate-100">
-                            <img src="/images/product-ironer.jpg" alt="Precision Technology" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        </div>
-                        <p class="text-xs sm:text-sm text-[#64748B] leading-relaxed">
-                            Continuous research and innovations extend the variety of treatable fabrics without fiber degradation. Features mirror-polished chrome heating surfaces, uniform thermostatic heat distribution, smart touch PLC, and automated tension control.
+                        <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#C59B27] tracking-tight mb-4"
+                            style="font-family: 'new-hero', sans-serif;">
+                            TECHNOLOGY
+                        </h3>
+                        <p class="text-xs sm:text-[13px] text-[#1E252D] font-light leading-relaxed">
+                            Continuous research and innovations in 7A systems extend the varieties and types of treatable fabrics without fiber degradation. Impeccable finish, gentle thermal treatment, and reduction of ironing times to maximize productivity and ironing quality.
                         </p>
                     </div>
 
-                    <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-bold uppercase tracking-wider text-[#1E252D]">
-                            Thermal Innovations
-                        </span>
-                        <a href="#contact" class="w-10 h-10 rounded-full border border-slate-200 group-hover:border-[#C59B27] group-hover:bg-[#C59B27] group-hover:text-white flex items-center justify-center text-[#1E252D] transition-all">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                        </a>
-                    </div>
+                    <!-- Docked Corner Button -->
+                    <a href="#contact" 
+                       aria-label="Learn more about technology"
+                       class="absolute bottom-0 right-0 w-[50px] h-[50px] bg-[#C59B27] hover:bg-[#9A7514] text-white flex items-center justify-center transition-colors cursor-pointer">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 6. NUMERICAL CREDENTIALS / STATS STRIP -->
+    <!-- 5. NUMERICAL CREDENTIALS (Clean Architectural Metrics Grid) -->
     <!-- ========================================================================= -->
-    <section class="py-16 bg-[#1E252D] text-white border-y-2 border-[#C59B27]">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-700">
-                <div class="pt-4 md:pt-0">
-                    <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#C59B27]">25+</div>
-                    <div class="text-xs font-bold uppercase tracking-widest text-slate-300 mt-2">Years In Machinery</div>
+    <section class="bg-white border-b border-[#C59B27]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-[#C59B27] text-center">
+                <div class="p-8 lg:p-12">
+                    <div class="text-4xl sm:text-5xl font-light text-[#C59B27]" style="font-family: 'new-hero', sans-serif;">25+</div>
+                    <div class="text-[11px] font-light uppercase tracking-[0.2em] text-[#1E252D] mt-3">Years Engineering</div>
                 </div>
-                <div class="pt-4 md:pt-0">
-                    <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#C59B27]">1,200+</div>
-                    <div class="text-xs font-bold uppercase tracking-widest text-slate-300 mt-2">Global Installations</div>
+                <div class="p-8 lg:p-12">
+                    <div class="text-4xl sm:text-5xl font-light text-[#C59B27]" style="font-family: 'new-hero', sans-serif;">1,200+</div>
+                    <div class="text-[11px] font-light uppercase tracking-[0.2em] text-[#1E252D] mt-3">Machines Installed</div>
                 </div>
-                <div class="pt-4 md:pt-0">
-                    <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#C59B27]">30%</div>
-                    <div class="text-xs font-bold uppercase tracking-widest text-slate-300 mt-2">Lower Energy Consumption</div>
+                <div class="p-8 lg:p-12">
+                    <div class="text-4xl sm:text-5xl font-light text-[#C59B27]" style="font-family: 'new-hero', sans-serif;">30%</div>
+                    <div class="text-[11px] font-light uppercase tracking-[0.2em] text-[#1E252D] mt-3">Energy Savings</div>
                 </div>
-                <div class="pt-4 md:pt-0">
-                    <div class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#C59B27]">24/7</div>
-                    <div class="text-xs font-bold uppercase tracking-widest text-slate-300 mt-2">Certified Spares & Tech Support</div>
+                <div class="p-8 lg:p-12">
+                    <div class="text-4xl sm:text-5xl font-light text-[#C59B27]" style="font-family: 'new-hero', sans-serif;">24/7</div>
+                    <div class="text-[11px] font-light uppercase tracking-[0.2em] text-[#1E252D] mt-3">Spares & Support</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 7. CONTACT & INQUIRY FORM (Exact GMP #b2cModal & Contacts functionality) -->
+    <!-- 6. SECTION HEAD & TALK WITH US (Clean Architectural Contact Grid) -->
     <!-- ========================================================================= -->
-    <section id="contact" class="py-16 lg:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+    <section class="bg-white pt-14 lg:pt-20 pb-6">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+            <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#C59B27]"
+                style="font-family: 'new-hero', sans-serif;">
+                TALK WITH US
+            </h2>
+        </div>
+    </section>
+
+    <!-- 2-Column Split Architectural Form -->
+    <section id="contact" class="bg-white border-t border-b border-[#C59B27]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-[#C59B27]">
                 <!-- Left Details -->
-                <div class="lg:col-span-5">
-                    <span class="text-xs font-bold tracking-[0.25em] uppercase text-[#C59B27] block mb-2">DIRECT COMMUNICATION</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-[#1E252D] mb-4">
-                        TALK WITH OUR ENGINEERS
-                    </h2>
-                    <p class="text-xs sm:text-sm text-[#64748B] leading-relaxed mb-8">
-                        Interested in an ironer quotation, customized laundry floor layout, or replacement chest / roll parts? Send us your specification and our application engineering team will reply within 24 hours.
-                    </p>
+                <div class="p-8 sm:p-10 lg:p-14 bg-white flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-normal text-[#1E252D] mb-4" style="font-family: 'new-hero', sans-serif;">
+                            7A GLOBAL MACHINERY PVT. LTD.
+                        </h3>
+                        <p class="text-xs sm:text-[13px] text-[#1E252D] font-light leading-relaxed mb-8">
+                            Looking for a tailored laundry equipment specification, customized roller heating setup, or spare parts quote? Connect directly with our engineering department.
+                        </p>
 
-                    <div class="space-y-4 border-t border-slate-200 pt-6 text-xs text-[#1E252D]">
-                        <div class="flex items-center gap-3">
-                            <span class="w-8 h-8 rounded border border-[#C59B27]/40 flex items-center justify-center text-[#C59B27]">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                            </span>
-                            <div>
-                                <div class="font-bold uppercase tracking-wider text-[11px] text-[#64748B]">Telephone</div>
-                                <div class="font-semibold text-sm">+91 (0) 120 456 7890 / +91 98765 43210</div>
-                            </div>
+                        <div class="border-t border-b border-slate-200 py-6 space-y-4 text-xs font-light text-[#1E252D] leading-relaxed">
+                            <p class="flex items-baseline gap-4">
+                                <span class="font-semibold uppercase tracking-wider text-[#C59B27] w-20 shrink-0">Phone</span>
+                                <span>+91 (0) 120 456 7890 – 82547</span>
+                            </p>
+                            <p class="flex items-baseline gap-4">
+                                <span class="font-semibold uppercase tracking-wider text-[#C59B27] w-20 shrink-0">Email</span>
+                                <span>info@7aglobalmachinery.com</span>
+                            </p>
+                            <p class="flex items-baseline gap-4">
+                                <span class="font-semibold uppercase tracking-wider text-[#C59B27] w-20 shrink-0">Factory</span>
+                                <span>Industrial Corridor, Phase 7, Greater Noida (NCR) – India</span>
+                            </p>
                         </div>
+                    </div>
 
-                        <div class="flex items-center gap-3">
-                            <span class="w-8 h-8 rounded border border-[#C59B27]/40 flex items-center justify-center text-[#C59B27]">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                            </span>
-                            <div>
-                                <div class="font-bold uppercase tracking-wider text-[11px] text-[#64748B]">Direct Email</div>
-                                <div class="font-semibold text-sm">sales@7aglobalmachinery.com</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-3">
-                            <span class="w-8 h-8 rounded border border-[#C59B27]/40 flex items-center justify-center text-[#C59B27]">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                            </span>
-                            <div>
-                                <div class="font-bold uppercase tracking-wider text-[11px] text-[#64748B]">Plant Location</div>
-                                <div class="font-semibold text-sm">7A Global Machinery Industrial Complex, India</div>
-                            </div>
-                        </div>
+                    <div class="pt-8 text-[11px] text-[#64748B] font-light tracking-wide">
+                        Operating Hours: Monday – Saturday (09:00 – 18:00 IST)
                     </div>
                 </div>
 
-                <!-- Right Form (Livewire Form) -->
-                <div class="lg:col-span-7 bg-[#FAF9F5] border border-slate-200 p-8 sm:p-10 rounded-lg shadow-sm">
+                <!-- Right Clean Form -->
+                <div class="p-8 sm:p-10 lg:p-14 bg-white">
                     @if($quoteSubmitted)
-                    <div class="bg-emerald-50 border border-emerald-300 text-emerald-800 p-6 rounded text-center">
-                        <svg class="w-12 h-12 text-emerald-600 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        <h4 class="text-lg font-bold">Inquiry Successfully Received</h4>
-                        <p class="text-xs mt-2 text-emerald-700">Thank you, {{ $quoteName }}. Our engineering team has logged your technical request and will contact you promptly.</p>
-                        <button wire:click="resetQuoteForm" type="button" class="mt-4 px-4 py-2 bg-[#C59B27] text-white text-xs font-bold uppercase tracking-wider rounded">
+                    <div class="p-8 text-center bg-amber-50/50 border border-[#C59B27]/30">
+                        <h4 class="text-lg font-bold text-[#C59B27] mb-2 uppercase tracking-wide">Inquiry Received</h4>
+                        <p class="text-xs text-[#1E252D] font-light leading-relaxed">
+                            Thank you, {{ $quoteName }}. Our application engineers have logged your request and will contact you promptly.
+                        </p>
+                        <button wire:click="resetQuoteForm" type="button" class="mt-6 px-6 py-2.5 bg-[#C59B27] text-white text-xs uppercase tracking-wider font-normal cursor-pointer">
                             Send Another Request
                         </button>
                     </div>
                     @else
-                    <form wire:submit.prevent="submitQuote" class="space-y-4">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-[#1E252D] mb-1.5">
-                                    Name and Surname *
-                                </label>
-                                <input type="text" 
-                                       wire:model="quoteName" 
-                                       required
-                                       placeholder="e.g. John Doe"
-                                       class="w-full text-xs px-3.5 py-2.5 bg-white border border-slate-300 rounded focus:outline-hidden focus:border-[#C59B27]">
-                                @error('quoteName') <span class="text-xs text-red-500">{{ $message }}</span> @enderror
-                            </div>
+                    <form wire:submit.prevent="submitQuote" class="space-y-6">
+                        <div>
+                            <label class="block text-[11px] uppercase tracking-[0.15em] text-[#64748B] font-light mb-1.5">
+                                Name and Surname *
+                            </label>
+                            <input type="text" 
+                                   wire:model="quoteName" 
+                                   required
+                                   class="w-full text-xs py-2.5 px-0 border-b border-slate-300 focus:border-[#C59B27] bg-transparent focus:outline-hidden transition-colors">
+                            @error('quoteName') <span class="text-[10px] text-red-500">{{ $message }}</span> @enderror
+                        </div>
 
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-[#1E252D] mb-1.5">
+                                <label class="block text-[11px] uppercase tracking-[0.15em] text-[#64748B] font-light mb-1.5">
                                     Corporate Email *
                                 </label>
                                 <input type="email" 
                                        wire:model="quoteEmail" 
                                        required
-                                       placeholder="name@company.com"
-                                       class="w-full text-xs px-3.5 py-2.5 bg-white border border-slate-300 rounded focus:outline-hidden focus:border-[#C59B27]">
-                                @error('quoteEmail') <span class="text-xs text-red-500">{{ $message }}</span> @enderror
+                                       class="w-full text-xs py-2.5 px-0 border-b border-slate-300 focus:border-[#C59B27] bg-transparent focus:outline-hidden transition-colors">
+                                @error('quoteEmail') <span class="text-[10px] text-red-500">{{ $message }}</span> @enderror
                             </div>
-                        </div>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-[#1E252D] mb-1.5">
+                                <label class="block text-[11px] uppercase tracking-[0.15em] text-[#64748B] font-light mb-1.5">
                                     Phone / WhatsApp *
                                 </label>
                                 <input type="tel" 
                                        wire:model="quotePhone" 
                                        required
-                                       placeholder="+91..."
-                                       class="w-full text-xs px-3.5 py-2.5 bg-white border border-slate-300 rounded focus:outline-hidden focus:border-[#C59B27]">
-                                @error('quotePhone') <span class="text-xs text-red-500">{{ $message }}</span> @enderror
-                            </div>
-
-                            <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-[#1E252D] mb-1.5">
-                                    Company / Facility
-                                </label>
-                                <input type="text" 
-                                       wire:model="quoteCompany" 
-                                       placeholder="e.g. Grand Hotel / Laundry Services"
-                                       class="w-full text-xs px-3.5 py-2.5 bg-white border border-slate-300 rounded focus:outline-hidden focus:border-[#C59B27]">
+                                       class="w-full text-xs py-2.5 px-0 border-b border-slate-300 focus:border-[#C59B27] bg-transparent focus:outline-hidden transition-colors">
+                                @error('quotePhone') <span class="text-[10px] text-red-500">{{ $message }}</span> @enderror
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-[#1E252D] mb-1.5">
-                                Equipment of Interest
+                            <label class="block text-[11px] uppercase tracking-[0.15em] text-[#64748B] font-light mb-1.5">
+                                Equipment Line
                             </label>
-                            <select wire:model="quoteModel" class="w-full text-xs px-3.5 py-2.5 bg-white border border-slate-300 rounded focus:outline-hidden focus:border-[#C59B27]">
-                                <option value="E2 140.25 Chest Ironer">E2 140.25 Chest Ironer (1.4m width)</option>
-                                <option value="E2 200.30 Chest Ironer">E2 200.30 Chest Ironer (2.0m width)</option>
-                                <option value="G 21.50 Drying Flatwork Ironer">G 21.50 Drying Flatwork Ironer (2.1m width)</option>
-                                <option value="G 32.50 Industrial Drying Ironer">G 32.50 Industrial Drying Ironer (3.2m width)</option>
-                                <option value="Automated Folder / Feeder System">Automated Folder / Feeder System</option>
-                                <option value="Spare Parts / Maintenance Support">Spare Parts / Maintenance Support</option>
+                            <select wire:model="quoteModel" class="w-full text-xs py-2.5 px-0 border-b border-slate-300 focus:border-[#C59B27] bg-transparent focus:outline-hidden transition-colors">
+                                <option value="e² Line Chest Heated Ironers">e² Line Chest Heated Ironers</option>
+                                <option value="G Line Drying Ironers">G Line Drying Ironers</option>
+                                <option value="7A Line Commercial Ironers">7A Line Commercial Ironers</option>
+                                <option value="Automated Folding & Feeding Systems">Automated Folding & Feeding Systems</option>
+                                <option value="Spare Parts & Technical Service">Spare Parts & Technical Service</option>
                             </select>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-[#1E252D] mb-1.5">
+                            <label class="block text-[11px] uppercase tracking-[0.15em] text-[#64748B] font-light mb-1.5">
                                 Message & Requirements
                             </label>
                             <textarea wire:model="quoteMessage" 
-                                      rows="4" 
-                                      placeholder="Describe your laundry capacity, linen dimensions, and steam/electric preferences..."
-                                      class="w-full text-xs px-3.5 py-2.5 bg-white border border-slate-300 rounded focus:outline-hidden focus:border-[#C59B27]"></textarea>
+                                      rows="3" 
+                                      placeholder="Describe your laundry capacity, linen dimensions, and energy source..."
+                                      class="w-full text-xs py-2.5 px-0 border-b border-slate-300 focus:border-[#C59B27] bg-transparent focus:outline-hidden transition-colors resize-none"></textarea>
                         </div>
 
                         <button type="submit" 
-                                class="w-full py-3 px-6 bg-[#C59B27] hover:bg-[#9A7514] text-white font-bold text-xs uppercase tracking-widest rounded shadow-sm transition-all duration-200 cursor-pointer">
-                            Submit Inquiry to 7A Global Machinery
+                                class="w-full py-3.5 bg-[#C59B27] hover:bg-[#9A7514] text-white font-normal text-xs uppercase tracking-[0.2em] transition-colors cursor-pointer">
+                            Submit Inquiry
                         </button>
                     </form>
                     @endif

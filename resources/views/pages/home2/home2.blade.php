@@ -109,9 +109,9 @@
     <!-- ========================================================================= -->
     <!-- 2. SECTION 01: EQUIPMENT LINES PORTFOLIO (Clean Architectural Cards)     -->
     <!-- ========================================================================= -->
-    <section id="solutions" class="pt-20 pb-24 bg-white border-b border-slate-200">
+    <section id="solutions" class="pt-16 sm:pt-20 pb-20 sm:pb-24 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
-            <!-- Section Header with Elegant Editorial Rule -->
+            <!-- Section Header -->
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#C59B27]">
                 <div>
                     <span class="text-xs uppercase tracking-[0.25em] text-[#C59B27] font-medium block mb-3">
@@ -130,7 +130,7 @@
             <!-- 3 Clean Elevated Showcase Cards -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 pt-12">
                 <!-- CARD 1: e² Line -->
-                <div class="bg-white border border-slate-200 hover:border-[#C59B27] transition-all duration-300 p-8 sm:p-10 flex flex-col justify-between group">
+                <div class="bg-white border border-slate-200 hover:border-[#C59B27] transition-all duration-300 p-6 sm:p-8 lg:p-10 flex flex-col justify-between group">
                     <div>
                         <!-- Series Identifier -->
                         <div class="flex items-center justify-between pb-6 mb-6 border-b border-slate-100">
@@ -139,7 +139,7 @@
                         </div>
 
                         <!-- Clean Isolated Image Box -->
-                        <div class="h-48 flex items-center justify-center mb-8 overflow-hidden bg-[#FAF9F6] p-6">
+                        <div class="h-44 sm:h-48 flex items-center justify-center mb-8 overflow-hidden bg-[#FAF9F6] p-6">
                             <img src="/images/menu-e2.jpg" 
                                  alt="e² line flatwork ironer" 
                                  class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
@@ -182,7 +182,7 @@
                 </div>
 
                 <!-- CARD 2: G Line -->
-                <div class="bg-white border border-slate-200 hover:border-[#C59B27] transition-all duration-300 p-8 sm:p-10 flex flex-col justify-between group">
+                <div class="bg-white border border-slate-200 hover:border-[#C59B27] transition-all duration-300 p-6 sm:p-8 lg:p-10 flex flex-col justify-between group">
                     <div>
                         <!-- Series Identifier -->
                         <div class="flex items-center justify-between pb-6 mb-6 border-b border-slate-100">
@@ -191,7 +191,7 @@
                         </div>
 
                         <!-- Clean Isolated Image Box -->
-                        <div class="h-48 flex items-center justify-center mb-8 overflow-hidden bg-[#FAF9F6] p-6">
+                        <div class="h-44 sm:h-48 flex items-center justify-center mb-8 overflow-hidden bg-[#FAF9F6] p-6">
                             <img src="/images/menu-g.jpg" 
                                  alt="G line drying ironer" 
                                  class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
@@ -234,7 +234,7 @@
                 </div>
 
                 <!-- CARD 3: 7A Line -->
-                <div class="bg-white border border-slate-200 hover:border-[#C59B27] transition-all duration-300 p-8 sm:p-10 flex flex-col justify-between group">
+                <div class="bg-white border border-slate-200 hover:border-[#C59B27] transition-all duration-300 p-6 sm:p-8 lg:p-10 flex flex-col justify-between group">
                     <div>
                         <!-- Series Identifier -->
                         <div class="flex items-center justify-between pb-6 mb-6 border-b border-slate-100">
@@ -243,7 +243,7 @@
                         </div>
 
                         <!-- Clean Isolated Image Box -->
-                        <div class="h-48 flex items-center justify-center mb-8 overflow-hidden bg-[#FAF9F6] p-6">
+                        <div class="h-44 sm:h-48 flex items-center justify-center mb-8 overflow-hidden bg-[#FAF9F6] p-6">
                             <img src="/images/menu-7a.jpg" 
                                  alt="7A line chest ironer" 
                                  class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
@@ -291,7 +291,7 @@
     <!-- ========================================================================= -->
     <!-- 3. SECTION 02: INTERACTIVE IRONER FINDER (Refined Configurator Layout)   -->
     <!-- ========================================================================= -->
-    <section id="finder" class="py-24 bg-[#FAF9F6] border-b border-slate-200">
+    <section id="finder" class="py-16 sm:py-24 bg-[#FAF9F6] border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
             <!-- Section Header -->
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#C59B27] mb-12">
@@ -312,7 +312,7 @@
             <!-- Integrated 2-Column Architectural Configurator -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
                 <!-- Left Column: Controls (7 cols) -->
-                <div class="lg:col-span-7 space-y-10">
+                <div class="lg:col-span-7 space-y-8 sm:space-y-10">
                     <!-- Control 1: Application Sector -->
                     <div>
                         <div class="flex items-center justify-between mb-4">
@@ -402,14 +402,14 @@
                 </div>
 
                 <!-- Right Column: Clean Recommendation Showcase (5 cols) -->
-                <div class="lg:col-span-5 bg-white border border-[#C59B27] p-8 sm:p-10 flex flex-col justify-between">
+                <div class="lg:col-span-5 bg-white border border-[#C59B27] p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
                     <div>
                         <span class="text-[11px] uppercase tracking-[0.2em] text-[#C59B27] font-medium block mb-2">
                             Engineered Recommendation
                         </span>
 
                         <!-- Dynamic Matching Image -->
-                        <div class="h-44 flex items-center justify-center my-6 overflow-hidden bg-[#FAF9F6] p-4">
+                        <div class="h-40 sm:h-44 flex items-center justify-center my-6 overflow-hidden bg-[#FAF9F6] p-4">
                             @if($capacity === 'compact')
                                 <img src="/images/menu-7a.jpg" alt="7A Line Commercial Ironer" class="max-h-full max-w-full object-contain">
                             @elseif($capacity === 'medium')
@@ -465,7 +465,7 @@
     <!-- ========================================================================= -->
     <!-- 4. SECTION 03: SERVICE & TECHNOLOGY (Clean Editorial Layout)              -->
     <!-- ========================================================================= -->
-    <section id="technology" class="py-24 bg-white border-b border-slate-200">
+    <section id="technology" class="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
             <!-- Section Header -->
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#C59B27] mb-16">
@@ -490,7 +490,7 @@
                     <div class="lg:col-span-6 overflow-hidden">
                         <img src="/images/hero-1.jpg" 
                              alt="Technical Service and Diagnostics" 
-                             class="w-full h-[320px] sm:h-[380px] object-cover hover:scale-102 transition-transform duration-700">
+                             class="w-full h-[280px] sm:h-[360px] lg:h-[380px] object-cover hover:scale-102 transition-transform duration-700">
                     </div>
                     <div class="lg:col-span-6 space-y-6">
                         <span class="text-xs uppercase tracking-[0.2em] text-[#C59B27] font-medium block">
@@ -503,7 +503,7 @@
                         <p class="text-xs sm:text-[13px] text-[#1E252D] font-light leading-relaxed">
                             7A Global stands out for its attention to the customer before, during, and after purchase. We ensure an efficient and punctual technical service, enriched with constantly updated telemetry tools and genuine guaranteed spare parts.
                         </p>
-                        <div class="pt-4 border-t border-slate-100 flex items-center gap-8 text-xs font-light text-slate-500">
+                        <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center gap-4 sm:gap-8 text-xs font-light text-slate-500">
                             <div>• 24/7 Remote Diagnostics</div>
                             <div>• Rapid Spares Dispatch</div>
                             <div>• Factory Commissioning</div>
@@ -524,7 +524,7 @@
                         <p class="text-xs sm:text-[13px] text-[#1E252D] font-light leading-relaxed">
                             Continuous research and innovations in 7A heating systems extend the varieties and types of treatable fabrics without fiber degradation. Impeccable finish, gentle thermal treatment, and reduction of ironing times to maximize productivity and ironing quality.
                         </p>
-                        <div class="pt-4 border-t border-slate-100 flex items-center gap-8 text-xs font-light text-slate-500">
+                        <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center gap-4 sm:gap-8 text-xs font-light text-slate-500">
                             <div>• Mirror-Finish Chromium</div>
                             <div>• 30% Radiant Loss Reduction</div>
                             <div>• Precise Thermostats</div>
@@ -533,7 +533,7 @@
                     <div class="lg:col-span-6 overflow-hidden order-1 lg:order-2">
                         <img src="/images/hero-2.jpg" 
                              alt="Machinery Technology & Linen Finish" 
-                             class="w-full h-[320px] sm:h-[380px] object-cover hover:scale-102 transition-transform duration-700">
+                             class="w-full h-[280px] sm:h-[360px] lg:h-[380px] object-cover hover:scale-102 transition-transform duration-700">
                     </div>
                 </div>
             </div>
@@ -541,41 +541,234 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 5. SECTION 04: ENGINEERING CREDENTIALS (Clean Metric Ribbon)              -->
+    <!-- 5. SECTION 04: CLIENT EXPERIENCES & CASE REFERENCES                       -->
     <!-- ========================================================================= -->
-    <section id="credentials" class="py-16 bg-[#1E252D] text-white border-b border-[#C59B27]">
+    <section id="testimonials" class="py-16 sm:py-24 bg-[#FAF9F6] border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
-            <div class="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10 text-center">
-                <div class="py-6 px-4">
-                    <div class="text-4xl sm:text-5xl font-light text-[#C59B27]" style="font-family: 'new-hero', sans-serif;">25+</div>
-                    <div class="text-[11px] font-light uppercase tracking-[0.2em] text-white/80 mt-3">Years Engineering</div>
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#C59B27] mb-14">
+                <div>
+                    <span class="text-xs uppercase tracking-[0.25em] text-[#C59B27] font-medium block mb-3">
+                        04 / Client Experiences
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#1E252D]"
+                        style="font-family: 'new-hero', sans-serif;">
+                        Operational References
+                    </h2>
                 </div>
-                <div class="py-6 px-4">
-                    <div class="text-4xl sm:text-5xl font-light text-[#C59B27]" style="font-family: 'new-hero', sans-serif;">1,200+</div>
-                    <div class="text-[11px] font-light uppercase tracking-[0.2em] text-white/80 mt-3">Machines Installed</div>
+                <p class="text-xs sm:text-[13px] text-[#64748B] font-light max-w-md leading-relaxed">
+                    Verified feedback from luxury hotels, healthcare laundries, and commercial textile facilities operating 7A Global flatwork ironers.
+                </p>
+            </div>
+
+            <!-- 3 Clean Testimonial Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+                <!-- Testimonial 1 -->
+                <div class="bg-white border border-slate-200 hover:border-[#C59B27] transition-all duration-300 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
+                    <div>
+                        <div class="text-[#C59B27] text-3xl font-serif leading-none mb-6">“</div>
+                        <p class="text-xs sm:text-[13px] text-[#1E252D] font-light leading-relaxed mb-8 italic">
+                            The e² series chest ironer has significantly elevated our linen presentation. Our banquet tablecloths and 400-thread-count bedsheets achieve a crisp, mirror-smooth finish without fabric stress or pulling.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100">
+                        <div class="text-sm font-normal text-[#1E252D]" style="font-family: 'new-hero', sans-serif;">Director of Housekeeping</div>
+                        <div class="text-xs text-slate-400 font-light mt-0.5">5-Star Luxury Resort Collection</div>
+                        <div class="text-[11px] text-[#C59B27] uppercase tracking-wider font-medium mt-3">e² 200.30 Chest Ironer</div>
+                    </div>
                 </div>
-                <div class="py-6 px-4">
-                    <div class="text-4xl sm:text-5xl font-light text-[#C59B27]" style="font-family: 'new-hero', sans-serif;">30%</div>
-                    <div class="text-[11px] font-light uppercase tracking-[0.2em] text-white/80 mt-3">Energy Savings</div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white border border-slate-200 hover:border-[#C59B27] transition-all duration-300 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
+                    <div>
+                        <div class="text-[#C59B27] text-3xl font-serif leading-none mb-6">“</div>
+                        <p class="text-xs sm:text-[13px] text-[#1E252D] font-light leading-relaxed mb-8 italic">
+                            Operating two continuous 8-hour shifts daily, the G-line cylinder ironer delivers consistent throughput at over 280 kg/hour directly from the wash extractor, cutting our thermal cost per kilogram by over 25%.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100">
+                        <div class="text-sm font-normal text-[#1E252D]" style="font-family: 'new-hero', sans-serif;">Plant Technical Superintendent</div>
+                        <div class="text-xs text-slate-400 font-light mt-0.5">Central Healthcare Laundry Facility</div>
+                        <div class="text-[11px] text-[#C59B27] uppercase tracking-wider font-medium mt-3">G 32.50 Cylinder Ironer</div>
+                    </div>
                 </div>
-                <div class="py-6 px-4">
-                    <div class="text-4xl sm:text-5xl font-light text-[#C59B27]" style="font-family: 'new-hero', sans-serif;">24/7</div>
-                    <div class="text-[11px] font-light uppercase tracking-[0.2em] text-white/80 mt-3">Spares & Support</div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white border border-slate-200 hover:border-[#C59B27] transition-all duration-300 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
+                    <div>
+                        <div class="text-[#C59B27] text-3xl font-serif leading-none mb-6">“</div>
+                        <p class="text-xs sm:text-[13px] text-[#1E252D] font-light leading-relaxed mb-8 italic">
+                            The thermal insulation dramatically lowered ambient laundry room temperatures. Furthermore, the telemetry diagnostics and fast spares dispatch from 7A Global have provided exceptional reliability.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100">
+                        <div class="text-sm font-normal text-[#1E252D]" style="font-family: 'new-hero', sans-serif;">Operations Managing Director</div>
+                        <div class="text-xs text-slate-400 font-light mt-0.5">Premier Commercial Laundry Services</div>
+                        <div class="text-[11px] text-[#C59B27] uppercase tracking-wider font-medium mt-3">7A Series & Automated Folders</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 6. SECTION 05: TALK WITH US (Clean Form & Direct Contacts)                -->
+    <!-- 6. SECTION 05: FREQUENTLY ASKED QUESTIONS (Clean Alpine Accordion)       -->
     <!-- ========================================================================= -->
-    <section id="contact" class="py-24 bg-white">
+    <section id="faq" class="py-16 sm:py-24 bg-white border-b border-slate-200"
+             x-data="{ activeFaq: 0 }">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#C59B27] mb-12">
+                <div>
+                    <span class="text-xs uppercase tracking-[0.25em] text-[#C59B27] font-medium block mb-3">
+                        05 / Technical & Commercial Queries
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#1E252D]"
+                        style="font-family: 'new-hero', sans-serif;">
+                        Frequently Asked Questions
+                    </h2>
+                </div>
+                <p class="text-xs sm:text-[13px] text-[#64748B] font-light max-w-md leading-relaxed">
+                    Essential engineering guidelines concerning heating selections, roller sizes, moisture retention, and factory support.
+                </p>
+            </div>
+
+            <!-- Clean Accordion List -->
+            <div class="max-w-4xl mx-auto divide-y divide-slate-200 border-t border-b border-slate-200">
+                <!-- FAQ Item 1 -->
+                <div class="py-6">
+                    <button @click="activeFaq = (activeFaq === 0 ? null : 0)" 
+                            type="button" 
+                            class="w-full text-left flex items-start sm:items-center justify-between gap-4 cursor-pointer focus:outline-hidden group">
+                        <span class="text-base sm:text-lg font-normal text-[#1E252D] group-hover:text-[#C59B27] transition-colors leading-snug"
+                              style="font-family: 'new-hero', sans-serif;">
+                            What is the difference between chest-heated (e² line) and cylinder-drying (G line) ironers?
+                        </span>
+                        <span class="text-xl text-[#C59B27] font-light transition-transform duration-200 shrink-0 leading-none pt-0.5 sm:pt-0"
+                              :class="activeFaq === 0 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="activeFaq === 0" 
+                         x-collapse
+                         class="pt-4 text-xs sm:text-[13px] text-[#64748B] font-light leading-relaxed">
+                        Chest-heated ironers (e² line) press linen against a concave chromium mirror-finish bed, yielding the highest gloss finish and crisp touch required by luxury hotels. Cylinder-drying ironers (G line) feed laundry with up to 50% residual moisture straight from the washer-extractor, evaporating moisture and finishing in a single continuous pass for maximum hourly production.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="py-6">
+                    <button @click="activeFaq = (activeFaq === 1 ? null : 1)" 
+                            type="button" 
+                            class="w-full text-left flex items-start sm:items-center justify-between gap-4 cursor-pointer focus:outline-hidden group">
+                        <span class="text-base sm:text-lg font-normal text-[#1E252D] group-hover:text-[#C59B27] transition-colors leading-snug"
+                              style="font-family: 'new-hero', sans-serif;">
+                            Which heating energy is most appropriate for our facility (Electric, Steam, or Gas)?
+                        </span>
+                        <span class="text-xl text-[#C59B27] font-light transition-transform duration-200 shrink-0 leading-none pt-0.5 sm:pt-0"
+                              :class="activeFaq === 1 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="activeFaq === 1" 
+                         x-collapse
+                         class="pt-4 text-xs sm:text-[13px] text-[#64748B] font-light leading-relaxed">
+                        Steam heating is the most economical choice when a central boiler is already active on-site (typical in hospitals and commercial laundry plants). Direct Gas heating provides rapid temperature recovery and low operating overhead without boiler investment. Electric heating is ideal for on-premise laundries (OPL), boutique hotels, or locations where natural gas or steam utilities are unavailable.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="py-6">
+                    <button @click="activeFaq = (activeFaq === 2 ? null : 2)" 
+                            type="button" 
+                            class="w-full text-left flex items-start sm:items-center justify-between gap-4 cursor-pointer focus:outline-hidden group">
+                        <span class="text-base sm:text-lg font-normal text-[#1E252D] group-hover:text-[#C59B27] transition-colors leading-snug"
+                              style="font-family: 'new-hero', sans-serif;">
+                            How do I choose the correct roller width for bed linen?
+                        </span>
+                        <span class="text-xl text-[#C59B27] font-light transition-transform duration-200 shrink-0 leading-none pt-0.5 sm:pt-0"
+                              :class="activeFaq === 2 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="activeFaq === 2" 
+                         x-collapse
+                         class="pt-4 text-xs sm:text-[13px] text-[#64748B] font-light leading-relaxed">
+                        For king and queen-size hotel bed sheets (typically 2400 to 2800 mm wide), we recommend a minimum working roller width of 2600 to 3200 mm. This allows single-operator longitudinal feeding without preliminary folding, significantly speeding up finishing rates.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="py-6">
+                    <button @click="activeFaq = (activeFaq === 3 ? null : 3)" 
+                            type="button" 
+                            class="w-full text-left flex items-start sm:items-center justify-between gap-4 cursor-pointer focus:outline-hidden group">
+                        <span class="text-base sm:text-lg font-normal text-[#1E252D] group-hover:text-[#C59B27] transition-colors leading-snug"
+                              style="font-family: 'new-hero', sans-serif;">
+                            How are spare parts and telemetry technical assistance managed?
+                        </span>
+                        <span class="text-xl text-[#C59B27] font-light transition-transform duration-200 shrink-0 leading-none pt-0.5 sm:pt-0"
+                              :class="activeFaq === 3 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="activeFaq === 3" 
+                         x-collapse
+                         class="pt-4 text-xs sm:text-[13px] text-[#64748B] font-light leading-relaxed">
+                        We maintain full factory inventories of replacement drive belts, padding springs, heating elements, thermostats, and pneumatic components. Our telemetry-enabled ironers allow 7A Global technicians to review operating data and diagnostic logs remotely, minimizing downtime.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="py-6">
+                    <button @click="activeFaq = (activeFaq === 4 ? null : 4)" 
+                            type="button" 
+                            class="w-full text-left flex items-start sm:items-center justify-between gap-4 cursor-pointer focus:outline-hidden group">
+                        <span class="text-base sm:text-lg font-normal text-[#1E252D] group-hover:text-[#C59B27] transition-colors leading-snug"
+                              style="font-family: 'new-hero', sans-serif;">
+                            Do you provide on-site installation and operator training?
+                        </span>
+                        <span class="text-xl text-[#C59B27] font-light transition-transform duration-200 shrink-0 leading-none pt-0.5 sm:pt-0"
+                              :class="activeFaq === 4 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="activeFaq === 4" 
+                         x-collapse
+                         class="pt-4 text-xs sm:text-[13px] text-[#64748B] font-light leading-relaxed">
+                        Yes. 7A Global delivers comprehensive commissioning assistance, including steam/gas hookup verification, exhaust duct calibration, and hands-on maintenance training for your engineering and laundry personnel.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 7. SECTION 06: ENGINEERING CREDENTIALS (Clean Metric Ribbon)              -->
+    <!-- ========================================================================= -->
+    <section id="credentials" class="py-14 sm:py-16 bg-[#1E252D] text-white border-b border-[#C59B27]">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+            <div class="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10 text-center">
+                <div class="py-6 px-4">
+                    <div class="text-3xl sm:text-4xl lg:text-5xl font-light text-[#C59B27]" style="font-family: 'new-hero', sans-serif;">25+</div>
+                    <div class="text-[10px] sm:text-[11px] font-light uppercase tracking-[0.2em] text-white/80 mt-2 sm:mt-3">Years Engineering</div>
+                </div>
+                <div class="py-6 px-4">
+                    <div class="text-3xl sm:text-4xl lg:text-5xl font-light text-[#C59B27]" style="font-family: 'new-hero', sans-serif;">1,200+</div>
+                    <div class="text-[10px] sm:text-[11px] font-light uppercase tracking-[0.2em] text-white/80 mt-2 sm:mt-3">Machines Installed</div>
+                </div>
+                <div class="py-6 px-4 border-t md:border-t-0">
+                    <div class="text-3xl sm:text-4xl lg:text-5xl font-light text-[#C59B27]" style="font-family: 'new-hero', sans-serif;">30%</div>
+                    <div class="text-[10px] sm:text-[11px] font-light uppercase tracking-[0.2em] text-white/80 mt-2 sm:mt-3">Energy Savings</div>
+                </div>
+                <div class="py-6 px-4 border-t md:border-t-0">
+                    <div class="text-3xl sm:text-4xl lg:text-5xl font-light text-[#C59B27]" style="font-family: 'new-hero', sans-serif;">24/7</div>
+                    <div class="text-[10px] sm:text-[11px] font-light uppercase tracking-[0.2em] text-white/80 mt-2 sm:mt-3">Spares & Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 8. SECTION 07: TALK WITH US (Clean Form & Direct Contacts)                -->
+    <!-- ========================================================================= -->
+    <section id="contact" class="py-16 sm:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
             <!-- Section Header -->
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#C59B27] mb-14">
                 <div>
                     <span class="text-xs uppercase tracking-[0.25em] text-[#C59B27] font-medium block mb-3">
-                        04 / Contact
+                        06 / Contact & Inquiries
                     </span>
                     <h2 class="text-2xl sm:text-3xl lg:text-[40px] font-light uppercase tracking-[0.05em] text-[#1E252D]"
                         style="font-family: 'new-hero', sans-serif;">
@@ -588,7 +781,7 @@
             </div>
 
             <!-- 2-Column Split Clean Layout -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
                 <!-- Left Details (5 cols) -->
                 <div class="lg:col-span-5 space-y-8">
                     <div>
@@ -603,11 +796,11 @@
                     <div class="border-t border-b border-slate-200 py-6 space-y-4 text-xs font-light text-[#1E252D] leading-relaxed">
                         <p class="flex items-baseline gap-4">
                             <span class="font-normal uppercase tracking-wider text-[#C59B27] w-20 shrink-0">Phone</span>
-                            <span>+91 (0) 120 456 7890 – 82547</span>
+                            <a href="tel:+911204567890" class="hover:text-[#C59B27] transition-colors">+91 (0) 120 456 7890 – 82547</a>
                         </p>
                         <p class="flex items-baseline gap-4">
                             <span class="font-normal uppercase tracking-wider text-[#C59B27] w-20 shrink-0">Email</span>
-                            <span>info@7aglobalmachinery.com</span>
+                            <a href="mailto:info@7aglobalmachinery.com" class="hover:text-[#C59B27] transition-colors">info@7aglobalmachinery.com</a>
                         </p>
                         <p class="flex items-baseline gap-4">
                             <span class="font-normal uppercase tracking-wider text-[#C59B27] w-20 shrink-0">Factory</span>
@@ -621,7 +814,7 @@
                 </div>
 
                 <!-- Right Form (7 cols) -->
-                <div class="lg:col-span-7 bg-[#FAF9F6] p-8 sm:p-12 border border-slate-200">
+                <div class="lg:col-span-7 bg-[#FAF9F6] p-6 sm:p-10 lg:p-12 border border-slate-200">
                     @if($quoteSubmitted)
                     <div class="p-8 text-center bg-amber-50/50 border border-[#C59B27]/30">
                         <h4 class="text-lg font-normal text-[#C59B27] mb-2 uppercase tracking-wide">Inquiry Received</h4>

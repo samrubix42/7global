@@ -9,7 +9,7 @@
         </a>
 
         <!-- 2. Clean Navigation Links Directly in Header (Desktop) -->
-        <nav class="hidden md:flex items-center space-x-8 lg:space-x-12">
+        <nav class="hidden md:flex items-center space-x-6 lg:space-x-10">
             <a href="#solutions" 
                class="text-[13px] lg:text-[14px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
                 Flatwork Ironers
@@ -22,6 +22,14 @@
                class="text-[13px] lg:text-[14px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
                 Service & Technology
             </a>
+            <a href="#testimonials" 
+               class="text-[13px] lg:text-[14px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
+                References
+            </a>
+            <a href="#faq" 
+               class="text-[13px] lg:text-[14px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
+                FAQ
+            </a>
             <a href="#contact" 
                class="text-[13px] lg:text-[14px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
                 Talk With Us
@@ -29,7 +37,7 @@
         </nav>
 
         <!-- 3. Right Minimal Inquire Link / Mobile Toggle -->
-        <div class="flex items-center space-x-6">
+        <div class="flex items-center space-x-4 sm:space-x-6">
             <a href="#contact" 
                class="hidden sm:inline-block border border-[#C59B27] text-[#C59B27] hover:bg-[#C59B27] hover:text-white px-4 py-2 text-[12px] uppercase tracking-[0.1em] font-light transition-colors">
                 Inquire
@@ -59,7 +67,7 @@
          x-transition:leave-start="opacity-100 translate-y-0"
          x-transition:leave-end="opacity-0 -translate-y-2"
          @click.outside="mobileNavOpen = false"
-         class="md:hidden bg-white border-t border-[#C59B27]/40 px-6 py-6 space-y-4 shadow-lg">
+         class="md:hidden bg-white border-t border-[#C59B27]/40 px-6 py-6 space-y-3 shadow-lg">
         <a href="#solutions" 
            @click="mobileNavOpen = false"
            class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2 border-b border-slate-100">
@@ -74,6 +82,16 @@
            @click="mobileNavOpen = false"
            class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2 border-b border-slate-100">
             Service & Technology
+        </a>
+        <a href="#testimonials" 
+           @click="mobileNavOpen = false"
+           class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2 border-b border-slate-100">
+            References
+        </a>
+        <a href="#faq" 
+           @click="mobileNavOpen = false"
+           class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2 border-b border-slate-100">
+            Frequently Asked Questions
         </a>
         <a href="#contact" 
            @click="mobileNavOpen = false"

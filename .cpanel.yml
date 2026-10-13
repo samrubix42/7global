@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home3/mobiyuln/realfacilityservices.com/
+    - /bin/cp -R * $DEPLOYPATH 
+
+
+    

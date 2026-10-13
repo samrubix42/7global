@@ -5,7 +5,7 @@
         <a href="{{ route('home2') }}" class="flex items-center group" aria-label="7A Global Machinery Pvt. Ltd.">
             <img src="/logo.png" 
                  alt="7A GLOBAL MACHINERY PVT. LTD." 
-                 class="h-10 sm:h-12 lg:h-14 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.01]">
+                 class="h-12 sm:h-10 lg:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.01]">
         </a>
 
         <!-- 2. Clean Navigation Links Directly in Header (Desktop) -->

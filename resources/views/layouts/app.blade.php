@@ -10,23 +10,26 @@
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="/logo.png">
 
-        <!-- Google Fonts: Instrument Sans & Outfit -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <!-- GMP Ironers exact Typekit font: new-hero -->
+        <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+        <link rel="stylesheet" href="https://use.typekit.net/gmh4pjz.css">
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         @livewireStyles
     </head>
-    <body class="bg-[#FCFCFA] text-[#1E252D] font-sans antialiased selection:bg-[#C59B27] selection:text-white min-h-screen flex flex-col">
+    <body class="bg-[#FCFCFA] text-[#1E252D] antialiased selection:bg-[#C59B27] selection:text-white min-h-screen flex flex-col"
+          style="font-family: 'new-hero', sans-serif;">
 
-        <!-- 1. Left Fixed Architectural Sidebar (GMP Reference) -->
+        <!-- 1. Left Fixed Architectural Sidebar (GMP Clean Reference) -->
         <livewire:public.sidebar />
 
-        <!-- 2. Main Page Wrapper (Offset on desktop by sidebar width: 64px / 80px) -->
+        <!-- 2. Full-Screen Drawer Menu (Image 2 GMP Reference) -->
+        <livewire:public.menu />
+
+        <!-- 3. Main Page Wrapper (Offset on desktop by sidebar width) -->
         <div class="flex-1 flex flex-col md:pl-16 lg:pl-20 transition-all duration-300 w-full min-w-0">
-            <!-- Header Component -->
+            <!-- Clean Header Component (Logo Left, Hamburger Right) -->
             <livewire:public.header />
 
             <!-- Page Main Content Slot -->

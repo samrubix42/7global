@@ -60,22 +60,23 @@
                     }
                 },
                 burnToast(id){
-                    burnToast = this.getToastWithId(id);
-                    burnToastElement = document.getElementById(burnToast.id);
-                    if(burnToastElement){
+                    let item = this.getToastWithId(id);
+                    if(!item) return;
+                    let el = document.getElementById(item.id);
+                    if(el){
                         if(this.toasts.length == 1){
                             if(this.layout=='default'){
                                 this.expanded = false;
                             }
-                            burnToastElement.classList.remove('translate-y-0');
+                            el.classList.remove('translate-y-0');
                             if(this.position.includes('bottom')){
-                                burnToastElement.classList.add('translate-y-full');
+                                el.classList.add('translate-y-full');
                             } else {
-                                burnToastElement.classList.add('-translate-y-full');
+                                el.classList.add('-translate-y-full');
                             }
-                            burnToastElement.classList.add('-translate-y-full');
+                            el.classList.add('-translate-y-full');
                         }
-                        burnToastElement.classList.add('opacity-0');
+                        el.classList.add('opacity-0');
                         let that = this;
                         setTimeout(function(){
                             that.deleteToastWithId(id);
@@ -119,8 +120,8 @@
                     let middleToast = document.getElementById( this.toasts[1].id );
                     middleToast.style.zIndex = 90;
 
-                    if(this.expanded){
-                        middleToastPosition = topToast.getBoundingClientRect().height +
+                       if(this.expanded){
+                        let middleToastPosition = topToast.getBoundingClientRect().height +
                                                 this.paddingBetweenToasts + 'px';
 
                         if(this.position.includes('bottom')){
@@ -148,9 +149,9 @@
                     let bottomToast = document.getElementById( this.toasts[2].id );
                     bottomToast.style.zIndex = 80;
                     if(this.expanded){
-                        bottomToastPosition = topToast.getBoundingClientRect().height + 
+                        let bottomToastPosition = topToast.getBoundingClientRect().height + 
                                                 this.paddingBetweenToasts + 
-                                                middleToast.getBoundingClientRect().height +
+                                                middleToast.getBoundingClientRect().height + 
                                                 this.paddingBetweenToasts + 'px';
                         
                         if(this.position.includes('bottom')){
@@ -178,7 +179,7 @@
                     let burnToast = document.getElementById( this.toasts[3].id );
                     burnToast.style.zIndex = 70;
                     if(this.expanded){
-                        burnToastPosition = topToast.getBoundingClientRect().height + 
+                        let burnToastPosition = topToast.getBoundingClientRect().height + 
                                                 this.paddingBetweenToasts + 
                                                 middleToast.getBoundingClientRect().height + 
                                                 this.paddingBetweenToasts + 
@@ -261,11 +262,11 @@
                         return;
                     }
 
-                    lastToast = this.toasts[this.toasts.length - 1];
-                    lastToastRectangle = document.getElementById(lastToast.id).getBoundingClientRect();
+                    let lastToast = this.toasts[this.toasts.length - 1];
+                    let lastToastRectangle = document.getElementById(lastToast.id).getBoundingClientRect();
                     
-                    firstToast = this.toasts[0];
-                    firstToastRectangle = document.getElementById(firstToast.id).getBoundingClientRect();
+                    let firstToast = this.toasts[0];
+                    let firstToastRectangle = document.getElementById(firstToast.id).getBoundingClientRect();
 
                     if(this.toastsHovered){
                         if(this.position.includes('bottom')){
@@ -279,13 +280,9 @@
                 }
             }"
                @set-toasts-layout.window="
-                layout=event.detail.layout;
-                if(layout == 'expanded'){
-                    expanded=true;
-                } else {
-                    expanded=false;
-                }
-                stackToasts();
+                this.layout = event.detail.layout;
+                this.expanded = (this.layout === 'expanded');
+                this.stackToasts();
             "
                @toast-show.window="
     event.stopPropagation();

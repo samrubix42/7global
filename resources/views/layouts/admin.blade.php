@@ -59,6 +59,9 @@
         </div>
     </div>
 
+    <!-- Global Toast Notifications -->
+    <x-toaster />
+
     @livewireScripts
 </body>
 </html>

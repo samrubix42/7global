@@ -10,7 +10,7 @@
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="/logo.png">
 
-        <!-- GMP Ironers exact Typekit font: new-hero -->
+        <!-- Exact Typekit font: new-hero -->
         <link rel="preconnect" href="https://use.typekit.net" crossorigin>
         <link rel="stylesheet" href="https://use.typekit.net/gmh4pjz.css">
 
@@ -21,25 +21,16 @@
     <body class="bg-[#FCFCFA] text-[#1E252D] antialiased selection:bg-[#C59B27] selection:text-white min-h-screen flex flex-col"
           style="font-family: 'new-hero', sans-serif;">
 
-        <!-- 1. Left Fixed Architectural Sidebar (GMP Clean Reference) -->
-        <livewire:public.sidebar />
+        <!-- 1. Header with integrated navigation links (No ) -->
+        <livewire:public.header />
 
-        <!-- 2. Full-Screen Drawer Menu (Image 2 GMP Reference) -->
-        <livewire:public.menu />
+        <!-- 2. Main Page Content (Full width clean container, no  offset) -->
+        <main class="flex-1 w-full min-w-0">
+            {{ $slot }}
+        </main>
 
-        <!-- 3. Main Page Wrapper (Offset on desktop by sidebar width) -->
-        <div class="flex-1 flex flex-col md:pl-16 lg:pl-20 transition-all duration-300 w-full min-w-0">
-            <!-- Clean Header Component (Logo Left, Hamburger Right) -->
-            <livewire:public.header />
-
-            <!-- Page Main Content Slot -->
-            <main class="flex-1 w-full">
-                {{ $slot }}
-            </main>
-
-            <!-- Architectural Footer -->
-            <livewire:public.footer />
-        </div>
+        <!-- 3. Clean Architectural Footer -->
+        <livewire:public.footer />
 
         @livewireScripts
     </body>

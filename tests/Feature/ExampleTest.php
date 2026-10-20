@@ -17,12 +17,10 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function test_home2_returns_a_successful_response(): void
+    public function test_media_page_returns_a_successful_response(): void
     {
-        $response = $this->get('/home2');
+        $response = $this->get('/media');
 
         $response->assertStatus(200);
-        $response->assertSee('A DELICATE TOUCH');
-        $response->assertSee('Flatwork Ironers');
     }
 }

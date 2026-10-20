@@ -23,7 +23,7 @@
     <nav aria-label="Breadcrumb" class="border-b border-slate-200 bg-[#FAF9F6]">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 py-4">
             <ol class="flex items-center gap-2 text-[11px] uppercase tracking-[0.15em] font-light text-[#64748B]">
-                <li><a href="{{ route('home') }}" class="hover:text-[#C59B27] transition-colors inline-flex items-center gap-1.5"><i class="ri-home-4-line text-sm"></i> Home</a></li>
+                <li><a href="{{ route('home')  }}" wire:navigate class="hover:text-[#C59B27] transition-colors inline-flex items-center gap-1.5"><i class="ri-home-4-line text-sm"></i> Home</a></li>
                 <li class="text-[#C59B27]"><i class="ri-arrow-right-s-line"></i></li>
                 <li class="text-[#1E252D]">Contact Us</li>
             </ol>

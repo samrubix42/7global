@@ -59,7 +59,7 @@
                 </a>
 
                 <!-- Home 2 -->
-                <a href="{{ route('home2') }}" target="_blank"
+                <a href="{{ route('home') }}" target="_blank"
                    class="flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 transition-colors">
                     <div class="flex items-center gap-2.5">
                         <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -139,7 +139,7 @@
                             <span>Main Website</span>
                             <span class="text-xs text-zinc-400">↗</span>
                         </a>
-                        <a href="{{ route('home2') }}" class="flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-zinc-600 hover:bg-zinc-100">
+                        <a href="{{ route('home') }}" class="flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-zinc-600 hover:bg-zinc-100">
                             <span>Home V2</span>
                             <span class="text-xs text-zinc-400">↗</span>
                         </a>

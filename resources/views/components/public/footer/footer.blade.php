@@ -12,7 +12,7 @@
                 
                 <!-- LEFT LOGO & BRAND INTRO -->
                 <div class="lg:col-span-5">
-                    <a href="{{ route('home') }}" class="inline-block mb-6">
+                    <a href="{{ route('home') }}" wire:navigate class="inline-block mb-6">
                         <img src="/logo.png" 
                              alt="7A Global Machinery" 
                              class="h-10 w-auto brightness-0 invert">
@@ -35,9 +35,9 @@
                             IRONERS
                         </h4>
                         <ul class="space-y-3.5 text-xs font-light text-white/60">
-                            <li><a href="{{ route('equipment') }}" class="hover:text-white transition-colors">e² line</a></li>
-                            <li><a href="{{ route('equipment') }}" class="hover:text-white transition-colors">G line</a></li>
-                            <li><a href="{{ route('equipment') }}" class="hover:text-white transition-colors">7A line</a></li>
+                            <li><a href="{{ route('equipment') }}" wire:navigate class="hover:text-white transition-colors">e² line</a></li>
+                            <li><a href="{{ route('equipment') }}" wire:navigate class="hover:text-white transition-colors">G line</a></li>
+                            <li><a href="{{ route('equipment') }}" wire:navigate class="hover:text-white transition-colors">7A line</a></li>
                         </ul>
                     </div>
 
@@ -63,7 +63,7 @@
                     <!-- Column 3: SERVICES, MEDIA, CONTACTS -->
                     <div class="space-y-5">
                         <div>
-                            <a href="{{ route('consultancy') }}" class="text-base font-normal uppercase tracking-[0.08em] text-white hover:text-[#C59B27] transition-colors block">
+                            <a href="{{ route('consultancy') }}" wire:navigate class="text-base font-normal uppercase tracking-[0.08em] text-white hover:text-[#C59B27] transition-colors block">
                                 SERVICES
                             </a>
                         </div>
@@ -73,7 +73,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="{{ route('contact') }}" class="text-base font-normal uppercase tracking-[0.08em] text-white hover:text-[#C59B27] transition-colors block">
+                            <a href="{{ route('contact') }}" wire:navigate class="text-base font-normal uppercase tracking-[0.08em] text-white hover:text-[#C59B27] transition-colors block">
                                 CONTACTS
                             </a>
                         </div>
@@ -95,7 +95,7 @@
                 <span class="text-white/20">|</span>
                 <a href="#technology" class="hover:text-white transition-colors">Technology</a>
                 <span class="text-white/20">|</span>
-                <a href="{{ route('contact') }}" class="hover:text-white transition-colors">Inquire</a>
+                <a href="{{ route('contact') }}" wire:navigate class="hover:text-white transition-colors">Inquire</a>
                 <span class="text-white/20">|</span>
                 <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="hover:text-[#C59B27] transition-colors cursor-pointer">
                     Back to Top ↑

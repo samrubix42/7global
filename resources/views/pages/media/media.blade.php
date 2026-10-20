@@ -23,7 +23,7 @@
     <nav aria-label="Breadcrumb" class="border-b border-slate-200 bg-[#FAF9F6]">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 py-4">
             <ol class="flex items-center gap-2 text-[11px] uppercase tracking-[0.15em] font-light text-[#64748B]">
-                <li><a href="{{ route('home') }}" class="hover:text-[#C59B27] transition-colors inline-flex items-center gap-1.5"><i class="ri-home-4-line text-sm"></i> Home</a></li>
+                <li><a href="{{ route('home')  }}" wire:navigate class="hover:text-[#C59B27] transition-colors inline-flex items-center gap-1.5"><i class="ri-home-4-line text-sm"></i> Home</a></li>
                 <li class="text-[#C59B27]"><i class="ri-arrow-right-s-line"></i></li>
                 <li class="text-[#1E252D]">Media</li>
             </ol>
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="pt-8 mt-8 border-t border-slate-100">
-                        <a href="{{ route('contact') }}"
+                        <a href="{{ route('contact')  }}" wire:navigate
                            class="w-full py-3 text-xs uppercase tracking-[0.15em] font-light text-[#1E252D] group-hover:text-[#C59B27] flex items-center justify-between border-b border-transparent group-hover:border-[#C59B27] transition-all">
                             <span>Read More</span>
                             <span class="text-base group-hover:translate-x-1 transition-transform"><i class="ri-arrow-right-line"></i></span>
@@ -129,11 +129,11 @@
                     </p>
                 </div>
                 <div class="shrink-0 flex flex-col sm:flex-row gap-4">
-                    <a href="{{ route('contact') }}"
+                    <a href="{{ route('contact')  }}" wire:navigate
                        class="text-center px-8 py-3.5 bg-[#C59B27] hover:bg-[#9A7514] text-white text-xs uppercase tracking-[0.2em] font-light transition-colors inline-flex items-center justify-center gap-2">
                         <i class="ri-send-plane-line"></i> Subscribe
                     </a>
-                    <a href="{{ route('projects') }}"
+                    <a href="{{ route('projects')  }}" wire:navigate
                        class="text-center px-8 py-3.5 border border-[#C59B27] text-[#C59B27] hover:bg-[#C59B27] hover:text-white text-xs uppercase tracking-[0.2em] font-light transition-colors inline-flex items-center justify-center gap-2">
                         <i class="ri-folder-chart-line"></i> View Projects
                     </a>

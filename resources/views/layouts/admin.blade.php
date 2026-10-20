@@ -52,7 +52,7 @@
                     <div class="flex items-center gap-4 text-zinc-500">
                         <a href="{{ route('home') }}" class="hover:text-zinc-900 transition-colors">View Live Website</a>
                         <span class="text-zinc-300">•</span>
-                        <a href="{{ route('home2') }}" class="hover:text-zinc-900 transition-colors">Home V2</a>
+                        <a href="{{ route('home') }}" class="hover:text-zinc-900 transition-colors">Home V2</a>
                     </div>
                 </div>
             </footer>

@@ -15,7 +15,7 @@ Route::match(['get', 'post'], '/logout', function () {
 })->name('logout');
 
 // Admin routes
-Route::prefix('admin')->group(function () {
+Route::prefix('admin')->middleware('auth')->group(function () {
     Route::livewire('/', 'admin::dashboard')->name('admin.dashboard');
     Route::livewire('/faqs', 'admin::faq')->name('admin.faqs');
     Route::livewire('/testimonials', 'admin::testimonial')->name('admin.testimonials');

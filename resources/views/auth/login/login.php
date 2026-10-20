@@ -32,7 +32,6 @@ new #[Layout('layouts::auth'), Title('Sign In - 7A Global Admin')] class extends
 
     public function fillDemo(): void
     {
-        // Ensure admin user exists in DB so demo fill always works seamlessly
         if (User::where('email', 'admin@7global.com')->doesntExist()) {
             User::create([
                 'name' => 'Admin User',

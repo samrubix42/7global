@@ -34,6 +34,13 @@ class AdminAndAuthTest extends TestCase
         $response->assertSee('7A Global');
     }
 
+    public function test_admin_dashboard_requires_authentication(): void
+    {
+        $response = $this->get('/admin');
+
+        $response->assertRedirect('/login');
+    }
+
     public function test_login_component_works_with_credentials(): void
     {
         $user = User::firstOrCreate(

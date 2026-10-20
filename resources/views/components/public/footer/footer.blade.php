@@ -12,7 +12,7 @@
                 
                 <!-- LEFT LOGO & BRAND INTRO -->
                 <div class="lg:col-span-5">
-                    <a href="{{ route('home2') }}" class="inline-block mb-6">
+                    <a href="{{ route('home') }}" class="inline-block mb-6">
                         <img src="/logo.png" 
                              alt="7A Global Machinery" 
                              class="h-10 w-auto brightness-0 invert">

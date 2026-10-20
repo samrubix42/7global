@@ -4,7 +4,7 @@ use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-new #[Layout('layouts::app2')] #[Title('7A GLOBAL MACHINERY PVT. LTD. | Industrial Flatwork Ironers & Laundry Systems')] class extends Component
+new #[Layout('layouts::app')] #[Title('7A GLOBAL MACHINERY PVT. LTD. | Industrial Flatwork Ironers & Laundry Systems')] class extends Component
 {
     // Interactive Ironer Finder state
     public string $facility = 'hotel'; // hotel, hospital, commercial, institutional

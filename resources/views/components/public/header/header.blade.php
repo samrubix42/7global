@@ -2,7 +2,7 @@
         class="sticky top-0 z-40 bg-white border-b border-[#C59B27] transition-all duration-200 select-none">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-14 py-3.5 sm:py-4 flex items-center justify-between">
         <!-- 1. Brand Logo Only (Clean, scalable on mobile) -->
-        <a href="{{ route('home2') }}" class="flex items-center group shrink-0" aria-label="7A Global Machinery Pvt. Ltd.">
+        <a href="{{ route('home') }}" class="flex items-center group shrink-0" aria-label="7A Global Machinery Pvt. Ltd.">
             <img src="/logo.png" 
                  alt="7A GLOBAL MACHINERY PVT. LTD." 
                  class="h-9 sm:h-11 lg:h-13 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.01]">
@@ -26,10 +26,7 @@
                class="text-[12px] xl:text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
                 References
             </a>
-            <a href="#faq" 
-               class="text-[12px] xl:text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
-                FAQ
-            </a>
+            <a href="{{ route('about') }}" class="text-[12px] xl:text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">About Us</a>
             <a href="#contact" 
                class="text-[12px] xl:text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
                 Talk With Us
@@ -88,11 +85,7 @@
            class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2 border-b border-slate-100">
             References
         </a>
-        <a href="#faq" 
-           @click="mobileNavOpen = false"
-           class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2 border-b border-slate-100">
-            Frequently Asked Questions
-        </a>
+        <a href="{{ route('about') }}" class="text-[12px] xl:text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">About Us</a>
         <a href="#contact" 
            @click="mobileNavOpen = false"
            class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2">

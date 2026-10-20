@@ -21,3 +21,4 @@ Route::prefix('admin')->group(function () {
     Route::livewire('/faqs', 'admin::faq')->name('admin.faqs');
     Route::livewire('/testimonials', 'admin::testimonial')->name('admin.testimonials');
 });
+Route::livewire('/about', 'pages::about')->name('about');

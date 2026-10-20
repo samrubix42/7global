@@ -63,7 +63,7 @@
                     <!-- Column 3: SERVICES, MEDIA, CONTACTS -->
                     <div class="space-y-5">
                         <div>
-                            <a href="#technology" class="text-base font-normal uppercase tracking-[0.08em] text-white hover:text-[#C59B27] transition-colors block">
+                            <a href="{{ route('consultancy') }}" class="text-base font-normal uppercase tracking-[0.08em] text-white hover:text-[#C59B27] transition-colors block">
                                 SERVICES
                             </a>
                         </div>

@@ -23,3 +23,6 @@ Route::prefix('admin')->group(function () {
 Route::livewire('/about', 'pages::about')->name('about');
 Route::livewire('/contact', 'pages::contact')->name('contact');
 Route::livewire('/equipment', 'pages::equipment')->name('equipment');
+Route::livewire('/consultancy', 'pages::consultancy')->name('consultancy');
+Route::livewire('/projects', 'pages::projects')->name('projects');
+Route::livewire('/media', 'pages::media')->name('media');

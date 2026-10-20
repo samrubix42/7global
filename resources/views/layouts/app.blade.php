@@ -14,6 +14,9 @@
         <link rel="preconnect" href="https://use.typekit.net" crossorigin>
         <link rel="stylesheet" href="https://use.typekit.net/gmh4pjz.css">
 
+        <!-- Remix Icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         @livewireStyles

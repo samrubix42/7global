@@ -9,25 +9,25 @@
         </a>
 
         <!-- 2. Clean Navigation Links (Desktop: >= 1024px) -->
-        <nav class="hidden lg:flex items-center space-x-6 xl:space-x-9">
-            <a href="#solutions" 
+        <nav class="hidden lg:flex items-center justify-start flex-1 ml-8 xl:ml-12 space-x-6 xl:space-x-9">
+            <a href="{{ route('equipment') }}" 
                class="text-[12px] xl:text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
                 Flatwork Ironers
             </a>
-            <a href="#finder" 
+            <a href="{{ route('home') }}#finder" 
                class="text-[12px] xl:text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
                 Ironer Finder
             </a>
-            <a href="#technology" 
+            <a href="{{ route('home') }}#technology" 
                class="text-[12px] xl:text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
                 Service & Technology
             </a>
-            <a href="#testimonials" 
+            <a href="{{ route('home') }}#testimonials" 
                class="text-[12px] xl:text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
                 References
             </a>
             <a href="{{ route('about') }}" class="text-[12px] xl:text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">About Us</a>
-            <a href="#contact" 
+            <a href="{{ route('contact') }}" 
                class="text-[12px] xl:text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">
                 Talk With Us
             </a>
@@ -35,7 +35,7 @@
 
         <!-- 3. Right Minimal Inquire Link / Mobile Toggle -->
         <div class="flex items-center space-x-3 sm:space-x-5 shrink-0">
-            <a href="#contact" 
+            <a href="{{ route('contact') }}" 
                class="hidden sm:inline-block border border-[#C59B27] text-[#C59B27] hover:bg-[#C59B27] hover:text-white px-3.5 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-[12px] uppercase tracking-[0.1em] font-light transition-colors">
                 Inquire
             </a>
@@ -65,34 +65,38 @@
          x-transition:leave-end="opacity-0 -translate-y-2"
          @click.outside="mobileNavOpen = false"
          class="lg:hidden bg-white border-t border-[#C59B27]/40 px-6 py-6 space-y-3 shadow-lg">
-        <a href="#solutions" 
+        <a href="{{ route('equipment') }}" 
            @click="mobileNavOpen = false"
            class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2 border-b border-slate-100">
             Flatwork Ironers
         </a>
-        <a href="#finder" 
+        <a href="{{ route('home') }}#finder" 
            @click="mobileNavOpen = false"
            class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2 border-b border-slate-100">
             Ironer Finder
         </a>
-        <a href="#technology" 
+        <a href="{{ route('home') }}#technology" 
            @click="mobileNavOpen = false"
            class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2 border-b border-slate-100">
             Service & Technology
         </a>
-        <a href="#testimonials" 
+        <a href="{{ route('home') }}#testimonials" 
            @click="mobileNavOpen = false"
            class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2 border-b border-slate-100">
             References
         </a>
-        <a href="{{ route('about') }}" class="text-[12px] xl:text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] transition-colors py-1">About Us</a>
-        <a href="#contact" 
+        <a href="{{ route('about') }}" 
+           @click="mobileNavOpen = false"
+           class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2 border-b border-slate-100">
+            About Us
+        </a>
+        <a href="{{ route('contact') }}" 
            @click="mobileNavOpen = false"
            class="block text-[13px] uppercase tracking-[0.08em] font-light text-[#1E252D] hover:text-[#C59B27] py-2">
             Talk With Us
         </a>
         <div class="pt-2">
-            <a href="#contact" 
+            <a href="{{ route('contact') }}" 
                @click="mobileNavOpen = false"
                class="block text-center border border-[#C59B27] bg-[#C59B27] text-white py-2.5 text-[12px] uppercase tracking-[0.1em] font-light">
                 Submit Inquiry

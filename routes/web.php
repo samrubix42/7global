@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::livewire('/', 'pages::home')->name('home');
 
-
 // Auth routes
 Route::livewire('/login', 'auth::login')->name('login');
 Route::match(['get', 'post'], '/logout', function () {
@@ -22,3 +21,5 @@ Route::prefix('admin')->group(function () {
     Route::livewire('/testimonials', 'admin::testimonial')->name('admin.testimonials');
 });
 Route::livewire('/about', 'pages::about')->name('about');
+Route::livewire('/contact', 'pages::contact')->name('contact');
+Route::livewire('/equipment', 'pages::equipment')->name('equipment');

@@ -35,9 +35,9 @@
                             IRONERS
                         </h4>
                         <ul class="space-y-3.5 text-xs font-light text-white/60">
-                            <li><a href="#solutions" class="hover:text-white transition-colors">e² line</a></li>
-                            <li><a href="#solutions" class="hover:text-white transition-colors">G line</a></li>
-                            <li><a href="#solutions" class="hover:text-white transition-colors">7A line</a></li>
+                            <li><a href="{{ route('equipment') }}" class="hover:text-white transition-colors">e² line</a></li>
+                            <li><a href="{{ route('equipment') }}" class="hover:text-white transition-colors">G line</a></li>
+                            <li><a href="{{ route('equipment') }}" class="hover:text-white transition-colors">7A line</a></li>
                         </ul>
                     </div>
 
@@ -73,7 +73,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="#contact" class="text-base font-normal uppercase tracking-[0.08em] text-white hover:text-[#C59B27] transition-colors block">
+                            <a href="{{ route('contact') }}" class="text-base font-normal uppercase tracking-[0.08em] text-white hover:text-[#C59B27] transition-colors block">
                                 CONTACTS
                             </a>
                         </div>
@@ -95,7 +95,7 @@
                 <span class="text-white/20">|</span>
                 <a href="#technology" class="hover:text-white transition-colors">Technology</a>
                 <span class="text-white/20">|</span>
-                <a href="#contact" class="hover:text-white transition-colors">Inquire</a>
+                <a href="{{ route('contact') }}" class="hover:text-white transition-colors">Inquire</a>
                 <span class="text-white/20">|</span>
                 <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="hover:text-[#C59B27] transition-colors cursor-pointer">
                     Back to Top ↑

@@ -77,46 +77,43 @@
             <!-- Project Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
                 @foreach($this->filteredProjects() as $project)
-                <div class="bg-white border border-slate-200 hover:border-[#C59B27] transition-all duration-300 p-6 sm:p-8 flex flex-col justify-between group">
+                <div class="bg-white border border-slate-200 hover:border-[#C59B27] transition-all duration-300 flex flex-col justify-between group overflow-hidden">
                     <div>
-                        <div class="flex items-center justify-between pb-6 mb-6 border-b border-slate-100">
-                            <span class="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-[#C59B27] font-medium">
+                        <div class="relative h-48 overflow-hidden bg-[#FAF9F6]">
+                            <img src="{{ $project['image'] }}" alt="{{ $project['title'] }}"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1.5 bg-[#1E252D]/85 backdrop-blur-xs text-[10px] uppercase tracking-[0.2em] text-[#C59B27] font-medium">
                                 <i class="ri-map-pin-2-line"></i> {{ $project['sectorLabel'] }}
                             </span>
-                            <span class="text-[11px] text-slate-400 font-light">{{ $project['capacity'] }}</span>
                         </div>
 
-                        <h3 class="text-xl sm:text-2xl font-light text-[#1E252D] group-hover:text-[#C59B27] transition-colors mb-3"
-                            style="font-family: 'new-hero', sans-serif;">
-                            {{ $project['title'] }}
-                        </h3>
+                        <div class="p-6 sm:p-8">
+                            <div class="flex items-center justify-between pb-6 mb-6 border-b border-slate-100">
+                                <span class="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-[#C59B27] font-medium">
+                                    <i class="ri-focus-3-line"></i> {{ $project['sectorLabel'] }}
+                                </span>
+                                <span class="text-[11px] text-slate-400 font-light">{{ $project['location'] }}</span>
+                            </div>
 
-                        <p class="text-xs sm:text-[13px] text-[#64748B] font-light leading-relaxed mb-6">
-                            {{ $project['detail'] }}
-                        </p>
+                            <h3 class="text-xl sm:text-2xl font-light text-[#1E252D] group-hover:text-[#C59B27] transition-colors mb-3"
+                                style="font-family: 'new-hero', sans-serif;">
+                                {{ $project['title'] }}
+                            </h3>
 
-                        <div class="space-y-2.5 py-4 border-t border-slate-100 text-xs text-[#1E252D] font-light">
-                            <div class="flex justify-between gap-4">
-                                <span class="text-slate-400">Scope:</span>
-                                <span class="text-right">{{ $project['scope'] }}</span>
-                            </div>
-                            <div class="flex justify-between gap-4">
-                                <span class="text-slate-400">Capacity:</span>
-                                <span class="text-right text-[#C59B27] font-normal uppercase">{{ $project['capacity'] }}</span>
-                            </div>
-                            <div class="flex justify-between gap-4">
-                                <span class="text-slate-400">Location:</span>
-                                <span class="text-right">{{ $project['location'] }}</span>
-                            </div>
+                            <p class="text-xs sm:text-[13px] text-[#64748B] font-light leading-relaxed">
+                                {{ $project['detail'] }}
+                            </p>
                         </div>
                     </div>
 
-                    <div class="pt-8 border-t border-slate-100">
-                        <a href="{{ route('contact') }}"
-                           class="w-full py-3 text-xs uppercase tracking-[0.15em] font-light text-[#1E252D] group-hover:text-[#C59B27] flex items-center justify-between border-b border-transparent group-hover:border-[#C59B27] transition-all">
-                            <span>Discuss a Similar Project</span>
-                            <span class="text-base group-hover:translate-x-1 transition-transform"><i class="ri-arrow-right-line"></i></span>
-                        </a>
+                    <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+                        <div class="pt-4 border-t border-slate-100">
+                            <a href="{{ route('contact') }}"
+                               class="w-full py-3 text-xs uppercase tracking-[0.15em] font-light text-[#1E252D] group-hover:text-[#C59B27] flex items-center justify-between border-b border-transparent group-hover:border-[#C59B27] transition-all">
+                                <span>Discuss a Similar Project</span>
+                                <span class="text-base group-hover:translate-x-1 transition-transform"><i class="ri-arrow-right-line"></i></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 @endforeach

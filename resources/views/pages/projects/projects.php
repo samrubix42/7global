@@ -21,6 +21,7 @@ new #[Layout('layouts::app')] #[Title('Projects | 7A GLOBAL MACHINERY PVT. LTD.'
                 'location' => 'New Delhi, India',
                 'scope' => 'G line cylinder ironers + automated feeding',
                 'capacity' => '280+ kg/hour',
+                'image' => '/images/hero-1.jpg',
                 'detail' => 'A high-turnover central linen facility serving a 600-bed hospital, engineered for strict soil-to-clean separation and continuous two-shift operation.',
             ],
             [
@@ -30,6 +31,7 @@ new #[Layout('layouts::app')] #[Title('Projects | 7A GLOBAL MACHINERY PVT. LTD.'
                 'location' => 'Goa, India',
                 'scope' => 'e² line chest ironers',
                 'capacity' => '180 kg/hour',
+                'image' => '/images/hero-2.jpg',
                 'detail' => 'Mirror-finish chest ironing for banquet linen and high thread-count bed sheets, delivering a crisp, stress-free finish for a five-star property.',
             ],
             [
@@ -39,6 +41,7 @@ new #[Layout('layouts::app')] #[Title('Projects | 7A GLOBAL MACHINERY PVT. LTD.'
                 'location' => 'Greater Noida (NCR), India',
                 'scope' => 'G line + e² line hybrid plant',
                 'capacity' => '320+ kg/hour',
+                'image' => '/images/product-ironer.jpg',
                 'detail' => 'A multi-line commercial plant combining drying and chest ironers for mixed hotel, hospital, and institutional linen at scale.',
             ],
             [
@@ -48,6 +51,7 @@ new #[Layout('layouts::app')] #[Title('Projects | 7A GLOBAL MACHINERY PVT. LTD.'
                 'location' => 'Pune, India',
                 'scope' => '7A line commercial ironers',
                 'capacity' => '90 kg/hour',
+                'image' => '/images/menu-7a.jpg',
                 'detail' => 'A compact on-premise laundry retrofit for a large corporate campus, replacing older equipment with intuitive, low-maintenance ironers.',
             ],
             [
@@ -57,6 +61,7 @@ new #[Layout('layouts::app')] #[Title('Projects | 7A GLOBAL MACHINERY PVT. LTD.'
                 'location' => 'Jaipur, India',
                 'scope' => '7A line + G line',
                 'capacity' => '120 kg/hour',
+                'image' => '/images/menu-g.jpg',
                 'detail' => 'An on-premise laundry for a regional hospital, designed for reliable hygiene processing with minimal operator complexity.',
             ],
             [
@@ -66,6 +71,7 @@ new #[Layout('layouts::app')] #[Title('Projects | 7A GLOBAL MACHINERY PVT. LTD.'
                 'location' => 'Mumbai, India',
                 'scope' => 'e² line chest ironers',
                 'capacity' => '140 kg/hour',
+                'image' => '/images/menu-e2.jpg',
                 'detail' => 'A space-efficient ironing line for a city business hotel, balancing premium finish with a compact plant footprint.',
             ],
         ];

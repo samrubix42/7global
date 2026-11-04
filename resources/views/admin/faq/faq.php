@@ -16,6 +16,13 @@ new #[Layout('layouts::admin'), Title('FAQ Management - 7A Global Machinery')] c
 
     public string $statusFilter = 'all';
 
+    // View details modal state
+    public bool $showViewModal = false;
+
+    public ?int $viewFaqId = null;
+
+    public ?Faq $viewingFaq = null;
+
     // Modal state
     public bool $showModal = false;
 
@@ -70,6 +77,29 @@ new #[Layout('layouts::admin'), Title('FAQ Management - 7A Global Machinery')] c
     public function updatingStatusFilter(): void
     {
         $this->resetPage();
+    }
+
+    public function openViewModal(int $id): void
+    {
+        $this->viewingFaq = Faq::find($id);
+        $this->viewFaqId = $id;
+        $this->showViewModal = true;
+    }
+
+    public function closeViewModal(): void
+    {
+        $this->showViewModal = false;
+        $this->viewingFaq = null;
+        $this->viewFaqId = null;
+    }
+
+    public function editFromViewModal(): void
+    {
+        if ($this->viewFaqId) {
+            $id = $this->viewFaqId;
+            $this->closeViewModal();
+            $this->openEditModal($id);
+        }
     }
 
     public function openCreateModal(): void

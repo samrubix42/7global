@@ -18,6 +18,13 @@ new #[Layout('layouts::admin'), Title('Testimonials - 7A Global Machinery')] cla
 
     public string $ratingFilter = 'all';
 
+    // View modal state
+    public bool $showViewModal = false;
+
+    public ?int $viewTestimonialId = null;
+
+    public ?Testimonial $viewingTestimonial = null;
+
     // Modal state
     public bool $showModal = false;
 
@@ -85,6 +92,29 @@ new #[Layout('layouts::admin'), Title('Testimonials - 7A Global Machinery')] cla
     public function updatingRatingFilter(): void
     {
         $this->resetPage();
+    }
+
+    public function openViewModal(int $id): void
+    {
+        $this->viewingTestimonial = Testimonial::find($id);
+        $this->viewTestimonialId = $id;
+        $this->showViewModal = true;
+    }
+
+    public function closeViewModal(): void
+    {
+        $this->showViewModal = false;
+        $this->viewingTestimonial = null;
+        $this->viewTestimonialId = null;
+    }
+
+    public function editFromViewModal(): void
+    {
+        if ($this->viewTestimonialId) {
+            $id = $this->viewTestimonialId;
+            $this->closeViewModal();
+            $this->openEditModal($id);
+        }
     }
 
     public function openCreateModal(): void
@@ -213,6 +243,7 @@ new #[Layout('layouts::admin'), Title('Testimonials - 7A Global Machinery')] cla
         return [
             'total' => Testimonial::count(),
             'active' => Testimonial::where('is_active', true)->count(),
+            'inactive' => Testimonial::where('is_active', false)->count(),
             'average_rating' => $avg ? number_format((float) $avg, 1) : '5.0',
         ];
     }

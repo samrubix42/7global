@@ -11,6 +11,10 @@ new #[Layout('layouts::admin'), Title('Dashboard - 7A Global Machinery Admin')] 
 
     public string $statusFilter = 'all';
 
+    public bool $showInquiryModal = false;
+
+    public ?array $selectedInquiry = null;
+
     public array $inquiries = [
         [
             'id' => 'INQ-8821',
@@ -21,6 +25,7 @@ new #[Layout('layouts::admin'), Title('Dashboard - 7A Global Machinery Admin')] 
             'date' => 'Today, 10:45 AM',
             'status' => 'New',
             'value' => '$42,500',
+            'notes' => 'Client requires high-speed steam ironing capability for high-volume linen processing. Requesting lead time and shipping quote to Hamburg port.',
         ],
         [
             'id' => 'INQ-8820',
@@ -31,6 +36,7 @@ new #[Layout('layouts::admin'), Title('Dashboard - 7A Global Machinery Admin')] 
             'date' => 'Yesterday, 3:15 PM',
             'status' => 'Quoted',
             'value' => '$31,200',
+            'notes' => 'Quotation #Q-4491 issued. Evaluating dual thermal insulation option and optional folding unit attachments.',
         ],
         [
             'id' => 'INQ-8819',
@@ -41,6 +47,7 @@ new #[Layout('layouts::admin'), Title('Dashboard - 7A Global Machinery Admin')] 
             'date' => 'Oct 12, 2026',
             'status' => 'Review',
             'value' => '$19,800',
+            'notes' => 'Floor plan architectural specs verified. Awaiting power grid three-phase verification from client engineering team.',
         ],
         [
             'id' => 'INQ-8818',
@@ -51,6 +58,7 @@ new #[Layout('layouts::admin'), Title('Dashboard - 7A Global Machinery Admin')] 
             'date' => 'Oct 11, 2026',
             'status' => 'Completed',
             'value' => '$45,000',
+            'notes' => 'Contract executed. Production scheduling in progress. Delivery targeted for end of Q4 2026.',
         ],
         [
             'id' => 'INQ-8817',
@@ -61,8 +69,30 @@ new #[Layout('layouts::admin'), Title('Dashboard - 7A Global Machinery Admin')] 
             'date' => 'Oct 09, 2026',
             'status' => 'Completed',
             'value' => '$32,600',
+            'notes' => 'Full container delivered and commissioned. Positive feedback on finishing speed and temperature uniformity.',
         ],
     ];
+
+    #[Computed]
+    public function statusCounts(): array
+    {
+        $counts = [
+            'all' => count($this->inquiries),
+            'new' => 0,
+            'quoted' => 0,
+            'review' => 0,
+            'completed' => 0,
+        ];
+
+        foreach ($this->inquiries as $item) {
+            $key = strtolower($item['status']);
+            if (isset($counts[$key])) {
+                $counts[$key]++;
+            }
+        }
+
+        return $counts;
+    }
 
     #[Computed]
     public function filteredInquiries(): array
@@ -71,7 +101,8 @@ new #[Layout('layouts::admin'), Title('Dashboard - 7A Global Machinery Admin')] 
             $matchesSearch = empty($this->search) ||
                 str_contains(strtolower($inquiry['client']), strtolower($this->search)) ||
                 str_contains(strtolower($inquiry['model']), strtolower($this->search)) ||
-                str_contains(strtolower($inquiry['id']), strtolower($this->search));
+                str_contains(strtolower($inquiry['id']), strtolower($this->search)) ||
+                str_contains(strtolower($inquiry['contact']), strtolower($this->search));
 
             $matchesStatus = $this->statusFilter === 'all' ||
                 strtolower($inquiry['status']) === strtolower($this->statusFilter);
@@ -83,5 +114,42 @@ new #[Layout('layouts::admin'), Title('Dashboard - 7A Global Machinery Admin')] 
     public function setFilter(string $status): void
     {
         $this->statusFilter = $status;
+    }
+
+    public function viewInquiry(string $id): void
+    {
+        foreach ($this->inquiries as $inquiry) {
+            if ($inquiry['id'] === $id) {
+                $this->selectedInquiry = $inquiry;
+                $this->showInquiryModal = true;
+
+                return;
+            }
+        }
+    }
+
+    public function closeInquiryModal(): void
+    {
+        $this->showInquiryModal = false;
+        $this->selectedInquiry = null;
+    }
+
+    public function updateStatus(string $id, string $newStatus): void
+    {
+        foreach ($this->inquiries as &$inquiry) {
+            if ($inquiry['id'] === $id) {
+                $inquiry['status'] = $newStatus;
+                if ($this->selectedInquiry && $this->selectedInquiry['id'] === $id) {
+                    $this->selectedInquiry['status'] = $newStatus;
+                }
+                break;
+            }
+        }
+
+        $this->dispatch('toast-show', [
+            'message' => "Inquiry {$id} status updated to {$newStatus}.",
+            'type' => 'success',
+            'position' => 'top-right',
+        ]);
     }
 };

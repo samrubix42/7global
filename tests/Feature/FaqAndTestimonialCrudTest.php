@@ -135,6 +135,25 @@ class FaqAndTestimonialCrudTest extends TestCase
         ]);
     }
 
+    public function test_faq_view_modal_can_be_opened_and_closed(): void
+    {
+        $faq = Faq::create([
+            'question' => 'How does the auto-speed synchronization operate?',
+            'answer' => 'It utilizes frequency inverters coordinated with the feeder and ironer belts.',
+            'is_active' => true,
+        ]);
+
+        Livewire::actingAs($this->admin)
+            ->test('admin::faq')
+            ->call('openViewModal', $faq->id)
+            ->assertSet('showViewModal', true)
+            ->assertSet('viewFaqId', $faq->id)
+            ->assertSee('How does the auto-speed synchronization operate?')
+            ->call('closeViewModal')
+            ->assertSet('showViewModal', false)
+            ->assertSet('viewingFaq', null);
+    }
+
     public function test_testimonial_admin_page_renders_successfully(): void
     {
         $response = $this->actingAs($this->admin)->get('/admin/testimonials');
@@ -230,5 +249,40 @@ class FaqAndTestimonialCrudTest extends TestCase
         $this->assertDatabaseMissing('testimonials', [
             'id' => $testimonial->id,
         ]);
+    }
+
+    public function test_testimonial_view_modal_can_be_opened_and_closed(): void
+    {
+        $testimonial = Testimonial::create([
+            'name' => 'Marcus Vance',
+            'designation' => 'Plant Director, Vance Linens',
+            'description' => 'Unbeatable throughput on 100% cotton sheets.',
+            'rating' => 5,
+            'is_active' => true,
+        ]);
+
+        Livewire::actingAs($this->admin)
+            ->test('admin::testimonial')
+            ->call('openViewModal', $testimonial->id)
+            ->assertSet('showViewModal', true)
+            ->assertSet('viewTestimonialId', $testimonial->id)
+            ->assertSee('Marcus Vance')
+            ->call('closeViewModal')
+            ->assertSet('showViewModal', false)
+            ->assertSet('viewingTestimonial', null);
+    }
+
+    public function test_dashboard_renders_and_inquiry_can_be_viewed_and_updated(): void
+    {
+        $response = $this->actingAs($this->admin)->get('/admin');
+        $response->assertStatus(200);
+        $response->assertSee('Recent Machinery Quotation Inquiries');
+
+        Livewire::actingAs($this->admin)
+            ->test('admin::dashboard')
+            ->call('viewInquiry', 'INQ-8821')
+            ->assertSet('showInquiryModal', true)
+            ->call('updateStatus', 'INQ-8821', 'Quoted')
+            ->assertDispatched('toast-show');
     }
 }
